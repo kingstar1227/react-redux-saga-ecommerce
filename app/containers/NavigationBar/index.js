@@ -19,6 +19,8 @@ import makeSelectNavigationBar from "./selectors";
 import reducer from "./reducer";
 import saga from "./saga";
 
+import Desktop from "./Desktop";
+
 // Css
 import "./navigation-bar.css";
 
@@ -29,8 +31,8 @@ export class NavigationBar extends React.PureComponent {
   // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-    <Header className="mbo-nav-wrap">
-      Navigation
+    <Header className="navbar">
+      <Desktop />
     </Header>
     );
   }

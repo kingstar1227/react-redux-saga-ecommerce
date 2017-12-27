@@ -47,7 +47,7 @@ export default function createReducer(injectedReducers) {
     route: routeReducer,
     language: languageProviderReducer,
     // MBO reducers
-    navigation: navigationBarReducer,
+    navigationBar: navigationBarReducer,
     ...injectedReducers,
   });
 }
