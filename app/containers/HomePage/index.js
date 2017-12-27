@@ -11,14 +11,14 @@
 
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
-import {Button} from 'antd';
+import { Button } from 'antd';
 import messages from './messages';
 
 export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', height: "100vh"}}>
-        <Button size="default" type="red">Proceed to checkout</Button>
+      <div>
+        <Button type="primary">Primary</Button>
       </div>
     );
   }

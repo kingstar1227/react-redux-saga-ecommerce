@@ -27,13 +27,15 @@ export default function App() {
     <div>
       <Layout>
         <Helmet
-          titleTemplate="%s - MBO - Ecommerce"
-          defaultTitle="MBO - Ecommerce"
+          titleTemplate="%s - MBO - e-commerce"
+          defaultTitle="MBO - e-commerce"
         >
           <meta name="description" content="Shop. Experience. Empower" />
         </Helmet>
         <NavigationBar />
-        <Content>
+        <Content
+          style={{ minHeight: "100vh", display: "relative", width: "100%" }}
+        >
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route component={NotFoundPage} />
