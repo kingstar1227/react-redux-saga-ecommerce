@@ -19,13 +19,20 @@ import makeSelectNavigationBar from "./selectors";
 import reducer from "./reducer";
 import saga from "./saga";
 
+// Css
+import "./navigation-bar.css";
+
 // Modules constants
 const { Header } = Layout;
 
 export class NavigationBar extends React.PureComponent {
   // eslint-disable-line react/prefer-stateless-function
   render() {
-    return <Header>Header</Header>;
+    return (
+    <Header className="mbo-nav-wrap">
+      Navigation
+    </Header>
+    );
   }
 }
 

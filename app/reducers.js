@@ -8,6 +8,9 @@ import { LOCATION_CHANGE } from 'react-router-redux';
 
 import languageProviderReducer from 'containers/LanguageProvider/reducer';
 
+// MBO reducers
+import navigationBarReducer from 'containers/NavigationBar/reducer';
+
 /*
  * routeReducer
  *
@@ -43,6 +46,8 @@ export default function createReducer(injectedReducers) {
   return combineReducers({
     route: routeReducer,
     language: languageProviderReducer,
+    // MBO reducers
+    navigation: navigationBarReducer,
     ...injectedReducers,
   });
 }
