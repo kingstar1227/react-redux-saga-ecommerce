@@ -4,7 +4,7 @@
   "description": "Shop. Experience. Empower",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:michaelgichia/mbo.git"
   },
   "engines": {
     "npm": ">=3",
