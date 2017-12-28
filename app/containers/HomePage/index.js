@@ -16,6 +16,7 @@ import Slider from "components/Slider";
 import SubNavbar from "components/SubNavbar";
 import TrendProduct from "components/TrendProduct";
 import SloganBanners from "components/SloganBanners";
+import CategoryLink from "components/CategoryLink";
 
 
 export default class HomePage extends React.PureComponent {
@@ -32,6 +33,9 @@ export default class HomePage extends React.PureComponent {
             </Col>
             <Col xs={24} sm={24} md={24} lg={24} xl={20} xxl={18}>
               <SloganBanners />
+            </Col>
+            <Col xs={24} sm={24} md={24} lg={24} xl={20} xxl={18}>
+              <CategoryLink />
             </Col>
           </Row>
         </div>

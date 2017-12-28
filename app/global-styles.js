@@ -21,4 +21,9 @@ injectGlobal`
     min-height: 100%;
     min-width: 100%;
   }
+
+  .ant-row-flex {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
 `;
