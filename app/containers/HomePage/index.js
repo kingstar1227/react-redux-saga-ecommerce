@@ -12,12 +12,16 @@
 import React from "react";
 
 import Slider from "components/Slider";
+import SubNavbar from "components/SubNavbar";
 
 export default class HomePage extends React.PureComponent {
   // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <Slider />
+      <div style={{position: "relative"}}>
+        <SubNavbar />
+        <Slider />
+      </div>
     );
   }
 }

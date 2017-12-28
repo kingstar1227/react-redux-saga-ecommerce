@@ -1,0 +1,24 @@
+.responsive-nav-wrap {
+  width: 100%;
+  position: absolute;
+  z-index: 1111;
+  display: block;
+  margin-bottom: -70px;
+}
+
+.sub-navbar-wrap {
+  position: absolute;
+  width: 100%;
+  top: 1px;
+  z-index: 4;
+}
+
+.sub-navbar-wrap .ant-menu {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.sub-navbar-wrap .ant-menu-horizontal {
+  border: none;
+}
