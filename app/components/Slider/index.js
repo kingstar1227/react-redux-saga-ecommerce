@@ -30,7 +30,7 @@ class Slider extends React.Component {
         </div>
         <div>
           <img
-            src="http://res.cloudinary.com/dw3arrxnf/image/upload/v1514439423/jordan_ywovwk.jpg"
+            src="http://res.cloudinary.com/dw3arrxnf/image/upload/c_scale,q_53,w_1600/v1514486709/banner11_uliktw.jpg"
             style={{ width: "100%" }}
           />
         </div>
