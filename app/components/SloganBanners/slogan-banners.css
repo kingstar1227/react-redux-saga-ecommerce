@@ -12,6 +12,9 @@
 .assurance-discount > div:first-child {
   width: 20%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .assurance-pricing > div:last-child,
