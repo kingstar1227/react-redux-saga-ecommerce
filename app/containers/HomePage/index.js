@@ -9,16 +9,40 @@
  * the linting exception.
  */
 
-import React from 'react';
-import { FormattedMessage } from 'react-intl';
-import { Button } from 'antd';
-import messages from './messages';
+import React from "react";
+import { Row, Col } from "antd";
 
-export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+import Slider from "components/Slider";
+import SubNavbar from "components/SubNavbar";
+import TrendProduct from "components/TrendProduct";
+import SloganBanners from "components/SloganBanners";
+import CategoryLink from "components/CategoryLink";
+import ProductBanner from "components/ProductBanner";
+
+
+export default class HomePage extends React.PureComponent {
+  // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <div>
-        <Button type="primary">Primary</Button>
+      <div style={{ position: "relative" }}>
+        <SubNavbar />
+        <Slider />
+        <div className="outer-wrap-grid">
+          <Row type="flex" justify="center">
+            <Col xs={24} sm={24} md={24} lg={24} xl={20} xxl={18}>
+              <TrendProduct />
+            </Col>
+            <Col xs={24} sm={24} md={24} lg={24} xl={20} xxl={18}>
+              <SloganBanners />
+            </Col>
+            <Col xs={24} sm={24} md={24} lg={24} xl={20} xxl={18}>
+              <CategoryLink />
+            </Col>
+            <Col xs={24} sm={24} md={24} lg={24} xl={20} xxl={18}>
+              <ProductBanner />
+            </Col>
+          </Row>
+        </div>
       </div>
     );
   }

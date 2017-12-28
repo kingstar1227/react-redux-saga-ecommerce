@@ -17,9 +17,9 @@ import { Layout } from "antd";
 import Helmet from "react-helmet";
 
 import NavigationBar from "containers/NavigationBar";
-import Footer from "containers/Footer";
 import HomePage from "containers/HomePage/Loadable";
 import NotFoundPage from "containers/NotFoundPage/Loadable";
+import Footer from "components/Footer";
 
 const { Content } = Layout;
 export default function App() {
@@ -27,8 +27,8 @@ export default function App() {
     <div>
       <Layout>
         <Helmet
-          titleTemplate="%s - MBO - e-commerce"
-          defaultTitle="MBO - e-commerce"
+          titleTemplate="%s - MBO - ecommerce"
+          defaultTitle="MBO - ecommerce"
         >
           <meta name="description" content="Shop. Experience. Empower" />
         </Helmet>

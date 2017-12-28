@@ -14,7 +14,6 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux';
 import createHistory from 'history/createBrowserHistory';
-import less from 'less';
 import 'sanitize.css/sanitize.css';
 
 // Import root app
@@ -44,6 +43,7 @@ import configureStore from './configureStore';
 import { translationMessages } from './i18n';
 
 // Import CSS reset and Global Styles
+import "./font-awesome.min.css";
 import './global-styles';
 import './stylesheet/index.less';
 // Create redux store with history
