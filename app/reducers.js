@@ -10,6 +10,7 @@ import languageProviderReducer from 'containers/LanguageProvider/reducer';
 
 // MBO reducers
 import navigationBarReducer from 'containers/NavigationBar/reducer';
+import searchFormReducer from 'containers/SearchForm/reducer';
 
 /*
  * routeReducer
@@ -48,6 +49,7 @@ export default function createReducer(injectedReducers) {
     language: languageProviderReducer,
     // MBO reducers
     navigationBar: navigationBarReducer,
+    searchForm: searchFormReducer,
     ...injectedReducers,
   });
 }

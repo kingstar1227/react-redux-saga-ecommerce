@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { push } from "react-router-redux";
 import { connect } from "react-redux";
 import { Icon } from "antd";
+
+import SearchForm from "containers/SearchForm";
+
 // Logo
 import mboLogo from "!file-loader?name=[mboLogo].[ext]!./images/mboLogo.png";
 
@@ -55,7 +58,7 @@ export class Desktop extends Component {
         </li>
         <li className="nav-item-left">
           <div className="wrapper-search">
-            <h1>Search</h1>
+            <SearchForm />
           </div>
         </li>
       </ul>
