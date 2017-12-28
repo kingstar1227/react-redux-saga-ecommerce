@@ -5,7 +5,8 @@
 */
 
 import React from "react";
-import { Menu, Icon } from "antd";
+import { Icon } from "antd";
+import Menu from "antd/lib/menu";
 const SubMenu = Menu.SubMenu;
 import "./sub-navbar.css";
 
