@@ -115,12 +115,12 @@
   .outer-wrap-trending > * {
     width: calc((100% / 3) - 16px);
     height: 368px;
-    margin: 32px 8px;
+    margin: 32px 0px;
     max-width: 300px;
   }
 
   .outer-wrap-grid {
-    margin-top: -110px;
+    margin-top: -90px;
   }
 
   .trending-banner-text {
@@ -144,7 +144,7 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 8px;
-    margin-top: 16px;
+    margin: 16px 0;
     flex-wrap: wrap;
     padding: 0 16px;
     justify-content: space-around;

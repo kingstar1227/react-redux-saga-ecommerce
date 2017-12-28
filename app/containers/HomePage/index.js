@@ -15,6 +15,8 @@ import { Row, Col } from "antd";
 import Slider from "components/Slider";
 import SubNavbar from "components/SubNavbar";
 import TrendProduct from "components/TrendProduct";
+import SloganBanners from "components/SloganBanners";
+
 
 export default class HomePage extends React.PureComponent {
   // eslint-disable-line react/prefer-stateless-function
@@ -27,6 +29,9 @@ export default class HomePage extends React.PureComponent {
           <Row type="flex" justify="center">
             <Col xs={24} sm={24} md={24} lg={24} xl={20} xxl={18}>
               <TrendProduct />
+            </Col>
+            <Col xs={24} sm={24} md={24} lg={24} xl={20} xxl={18}>
+              <SloganBanners />
             </Col>
           </Row>
         </div>

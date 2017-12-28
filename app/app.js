@@ -43,6 +43,7 @@ import configureStore from './configureStore';
 import { translationMessages } from './i18n';
 
 // Import CSS reset and Global Styles
+import "./font-awesome.min.css";
 import './global-styles';
 import './stylesheet/index.less';
 // Create redux store with history

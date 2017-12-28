@@ -1,0 +1,101 @@
+.assurance-pricing,
+.assurance-payment,
+.assurance-discount {
+  background-color: #fddf80;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.assurance-pricing > div:first-child,
+.assurance-payment > div:first-child,
+.assurance-discount > div:first-child {
+  width: 20%;
+  height: 100%;
+}
+
+.assurance-pricing > div:last-child,
+.assurance-payment > div:last-child,
+.assurance-discount > div:last-child {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.assurance-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  font-weight: 600;
+  font-size: 16px;
+  color: #343434;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.assurance-text {
+  display: block;
+  width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  font-size: 13px;
+}
+
+.assurance-pricing i {
+  color: #343434;
+}
+
+.assurance-payment-icons .fa-stack-1x {
+  text-align: right;
+  margin-top: 28%;
+}
+
+.assurance-icons .fa-inverse {
+  color: #fddf80;
+}
+
+.assurance-icons .fa-certificate {
+  color: #343434;
+}
+
+.assurance-payment {
+  background-color: #6bcbfa;
+}
+
+.assurance-pricing {
+  background-color: #fda794;
+}
+
+.as-wrap {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 8px;
+  width: 100%;
+  min-height: 80px;
+  margin-bottom: 32px;
+}
+
+.assurance-wrap {
+  margin-bottom: 32px;
+}
+
+@media all and (max-width: 768px) {
+  .as-wrap {
+    width: calc(100% - 32px);
+    margin: 0 16px 16px 16px;
+  }
+}
