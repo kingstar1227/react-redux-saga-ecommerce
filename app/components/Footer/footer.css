@@ -1,0 +1,157 @@
+.footer-nav {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.footer-nav > ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: space-around;
+}
+
+.second-ul > li {
+  width: 100%;
+}
+
+.contact > li {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.footer-address span {
+  width: 100%;
+  display: block;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.footer-service > ul > li,
+.footer-insider > ul > li {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.footer-form input {
+  padding: 12px;
+  background-color: white;
+  color: #343434;
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+.footer-form > form > button {
+  padding: 11px;
+  background-color: #7abe95;
+  color: #ffffff;
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.footer-share-btn > button {
+  display: inline-block;
+  padding: 8px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.footer-share-btn > button:hover {
+  background-color: #fff;
+  color: #343434;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-nav {
+    padding: 50px 0;
+  }
+
+  .footer-nav > ul > li {
+    width: 25%;
+    margin-left: 16px;
+  }
+
+  ul.second-ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-title {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 16px;
+    display: block;
+  }
+
+  .footer-share-btn {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-share-btn > button {
+    margin-right: 14px;
+    margin-top: 16px;
+  }
+
+  .footer-form > form > button,
+  .footer-form input {
+    width: 90%;
+    max-width: 200px;
+  }
+
+  .footer-form > form {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-nav {
+    padding: 16px;
+  }
+
+  .footer-contact-wrap {
+    text-align: center;
+  }
+
+  .footer-nav > ul {
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .footer-nav > ul > li {
+    flex-basis: 100%;
+  }
+
+  .footer-title {
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: block;
+  }
+
+  .footer-share-btn {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer-share-btn > button {
+    margin-right: 14px;
+    margin-top: 16px;
+  }
+
+  .footer-form > form > button,
+  .footer-form input {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .footer-form > form {
+    text-align: center;
+  }
+}
