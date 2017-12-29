@@ -16,6 +16,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-bottom: 16px;
 }
 
 .register-header-two {
@@ -32,6 +33,7 @@
 
 .register-form-button {
   width: 100%;
+  margin-top: 16px;
 }
 
 .register-main .ant-col-sm-24 {
@@ -40,5 +42,9 @@
 
 .register-main .ant-form-item {
   margin-bottom: 6px;
+}
+
+.register-main {
+  padding: 16px;
 }
 

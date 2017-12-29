@@ -87,7 +87,7 @@ export class SignupPage extends React.Component {
       <div className="register-wrap">
         <div className="register-header">
           <div className="register-header-one">
-            <h1>MBO - Register</h1>
+            <h1>MBO</h1>
           </div>
           <div className="register-header-two">
             <h2>Shop.Experience.Empower</h2>
@@ -171,7 +171,7 @@ export class SignupPage extends React.Component {
               >
                 Register
               </Button>
-              Or <Link to="/register">Sign in!</Link>
+              Or <Link to="/signin">Sign in!</Link>
             </FormItem>
           </Form>
         </div>
