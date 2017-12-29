@@ -20,6 +20,7 @@ import NavigationBar from "containers/NavigationBar";
 import HomePage from "containers/HomePage/Loadable";
 import NotFoundPage from "containers/NotFoundPage/Loadable";
 import LoginPage from "containers/LoginPage";
+import SignupPage from "containers/SignupPage";
 
 import Footer from "components/Footer";
 
@@ -41,6 +42,7 @@ export default function App() {
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route path="/signin" component={LoginPage} />
+            <Route path="/register" component={SignupPage} />
             <Route component={NotFoundPage} />
           </Switch>
         </Content>
