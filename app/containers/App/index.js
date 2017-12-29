@@ -16,11 +16,11 @@ import { Switch, Route } from "react-router-dom";
 import { Layout } from "antd";
 import Helmet from "react-helmet";
 
-import NavigationBar from "containers/NavigationBar";
+import NavigationBar from "containers/NavigationBar/Loadable";
 import HomePage from "containers/HomePage/Loadable";
 import NotFoundPage from "containers/NotFoundPage/Loadable";
-import LoginPage from "containers/LoginPage";
-import SignupPage from "containers/SignupPage";
+import LoginPage from "containers/LoginPage/Loadable";
+import SignupPage from "containers/SignupPage/Loadable";
 
 import Footer from "components/Footer";
 
