@@ -11,18 +11,18 @@
  * the linting exception.
  */
 
-import React from "react";
-import { Switch, Route } from "react-router-dom";
-import { Layout } from "antd";
-import Helmet from "react-helmet";
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+import { Layout } from 'antd';
+import Helmet from 'react-helmet';
 
-import NavigationBar from "containers/NavigationBar/Loadable";
-import HomePage from "containers/HomePage/Loadable";
-import NotFoundPage from "containers/NotFoundPage/Loadable";
-import LoginPage from "containers/LoginPage/Loadable";
-import SignupPage from "containers/SignupPage/Loadable";
+import NavigationBar from 'containers/NavigationBar/Loadable';
+import HomePage from 'containers/HomePage/Loadable';
+import NotFoundPage from 'containers/NotFoundPage/Loadable';
+import LoginPage from 'containers/LoginPage/Loadable';
+import SignupPage from 'containers/SignupPage/Loadable';
 
-import Footer from "components/Footer";
+import Footer from 'components/Footer';
 
 const { Content } = Layout;
 export default function App() {
@@ -37,7 +37,7 @@ export default function App() {
         </Helmet>
         <NavigationBar />
         <Content
-          style={{ minHeight: "100vh", display: "relative", width: "100%" }}
+          style={{ minHeight: '100vh', display: 'relative', width: '100%' }}
         >
           <Switch>
             <Route exact path="/" component={HomePage} />
