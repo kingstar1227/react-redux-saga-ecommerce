@@ -9,7 +9,6 @@
 .sub-navbar-wrap {
   position: absolute;
   width: 100%;
-  top: 1px;
   z-index: 4;
 }
 
