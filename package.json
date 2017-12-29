@@ -51,7 +51,14 @@
   "babel": {
     "plugins": [
       "styled-components",
-      ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "true" }] 
+      [
+        "import",
+        {
+          "libraryName": "antd",
+          "libraryDirectory": "es",
+          "style": "true"
+        }
+      ]
     ],
     "presets": [
       [
