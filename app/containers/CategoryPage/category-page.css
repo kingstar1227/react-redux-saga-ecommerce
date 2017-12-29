@@ -23,7 +23,7 @@
 }
 
 
-ul.catscrumb {
+.ant-breadcrumb {
   padding: 10px 16px;
   list-style: none;
   margin-left: auto;
@@ -34,18 +34,53 @@ ul.catscrumb {
   position: absolute;
 }
 
-ul.catscrumb li {
+.ant-breadcrumb span {
   display: inline;
   font-size: 16px;
 }
 
-ul.catscrumb li + li:before {
+.ant-breadcrumb span + li:before {
   padding: 8px;
   color: #fddf80;
   content: "\003E";
 }
 
-ul.catscrumb li button {
+.ant-breadcrumb-separator,
+.ant-breadcrumb-link a {
   color: #fddf80;
   text-decoration: none;
+}
+
+/* Category page styles
+=======================================================*/
+@media screen and (min-width: 768px) {
+  .wrap-res-nav2  {
+    display: block;
+    width: 100%;
+    height: 70px;
+  }
+
+  .wrap-res-nav2 > .responsive-nav-wrap {
+    background-color: #36839d;
+  }
+
+  .signin {
+    margin: 8px 16px 0px 16px;
+    width: calc(100% - 32px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrap-res-nav {
+    display: none;
+  }
+
+  .wrap-res-nav2 {
+    display: none;
+  }
+
+  .signin {
+    margin: 8px 0px 0px 0px;
+    width: calc(100%);
+  }
 }

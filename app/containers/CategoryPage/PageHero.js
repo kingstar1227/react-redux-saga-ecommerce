@@ -1,37 +1,49 @@
 /**
-*
-* PageHero
-*
-*/
+ *
+ * PageHero
+ *
+ */
 
 import React from 'react';
-import "!!style-loader!css-loader!./page-image.css";
+import { Link, withRouter } from 'react-router-dom';
+import { Breadcrumb } from 'antd';
 
-class PageHero extends React.Component { // eslint-disable-line react/prefer-stateless-function
+// Routes name and value
+const breadcrumbNameMap = {
+  '/': 'Home',
+  '/category': 'Shop',
+};
+
+class PageHero extends React.Component {
+  // eslint-disable-line react/prefer-stateless-function
   render() {
+    const { location } = this.props;
+    const pathSnippets = location.pathname.split('/').filter((i) => i);
+    const extraBreadcrumbItems = pathSnippets.map((_, index) => {
+      const url = `/${pathSnippets.slice(0, index + 1).join('/')}`;
+      return (
+        <Breadcrumb.Item key={url}>
+          <Link to={url}>{breadcrumbNameMap[url]}</Link>
+        </Breadcrumb.Item>
+      );
+    });
+    const breadcrumbItems = [
+      <Breadcrumb.Item key="home">
+        <Link to="/">Home</Link>
+      </Breadcrumb.Item>,
+    ].concat(extraBreadcrumbItems);
+
     return (
       <div className="category-bd-crumbs">
-        <div className="category-bd-layer"></div>
+        <div className="category-bd-layer" />
         <div className="crumb-wrap">
-          <ul className="catscrumb">
-            <li>
-              <button>Home</button>
-            </li>
-            <li>
-              <button>Shop</button>
-            </li>
-            <li>
-              <button>Men clothing</button>
-            </li>
-          </ul>
+          <Breadcrumb separator="&#62;">{breadcrumbItems}</Breadcrumb>
         </div>
       </div>
     );
   }
 }
 
-PageHero.propTypes = {
+PageHero.propTypes = {};
 
-};
-
-export default PageHero;
+export default withRouter(PageHero);

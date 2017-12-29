@@ -21,6 +21,7 @@ import HomePage from 'containers/HomePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import LoginPage from 'containers/LoginPage/Loadable';
 import SignupPage from 'containers/SignupPage/Loadable';
+import CategoryPage from 'containers/CategoryPage/Loadable';
 
 import Footer from 'components/Footer';
 
@@ -43,6 +44,7 @@ export default function App() {
             <Route exact path="/" component={HomePage} />
             <Route path="/signin" component={LoginPage} />
             <Route path="/register" component={SignupPage} />
+            <Route path="/category" component={CategoryPage} />
             <Route component={NotFoundPage} />
           </Switch>
         </Content>
