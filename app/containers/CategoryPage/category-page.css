@@ -1,0 +1,51 @@
+/* PageHero Styles
+===========================================================*/
+.category-bd-crumbs {
+  display: flex;
+  position: relative;
+  background: url("http://res.cloudinary.com/dw3arrxnf/image/upload/v1511184460/men-clothes_pvug9j.png");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  min-width: 100%;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+}
+
+.category-bd-layer {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+ul.catscrumb {
+  padding: 10px 16px;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  flex: 1;
+  width: 100vw;
+  display: block;
+  position: absolute;
+}
+
+ul.catscrumb li {
+  display: inline;
+  font-size: 16px;
+}
+
+ul.catscrumb li + li:before {
+  padding: 8px;
+  color: #fddf80;
+  content: "\003E";
+}
+
+ul.catscrumb li button {
+  color: #fddf80;
+  text-decoration: none;
+}
