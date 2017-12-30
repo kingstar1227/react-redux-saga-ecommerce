@@ -5,6 +5,7 @@
  */
 
 import React from 'react';
+import { Row, Col } from 'antd';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
@@ -14,6 +15,7 @@ import SubNavbar from 'components/SubNavbar';
 import injectSaga from 'utils/injectSaga';
 import injectReducer from 'utils/injectReducer';
 
+import Category from './Category';
 import PageHero from './PageHero';
 import makeSelectCategoryPage from './selectors';
 import reducer from './reducer';
@@ -31,6 +33,11 @@ export class CategoryPage extends React.Component {
           <SubNavbar />
         </div>
         <PageHero />
+        <Row type="flex" justify="center">
+          <Col xs={24} sm={24} md={24} lg={24} xl={22} xxl={20}>
+            <Category />
+          </Col>
+        </Row>
       </div>
     );
   }

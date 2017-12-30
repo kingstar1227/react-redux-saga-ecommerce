@@ -22,7 +22,6 @@
   height: 100%;
 }
 
-
 .ant-breadcrumb {
   padding: 10px 16px;
   list-style: none;
@@ -54,7 +53,7 @@
 /* Category page styles
 =======================================================*/
 @media screen and (min-width: 768px) {
-  .wrap-res-nav2  {
+  .wrap-res-nav2 {
     display: block;
     width: 100%;
     height: 70px;
@@ -83,4 +82,50 @@
     margin: 8px 0px 0px 0px;
     width: calc(100%);
   }
+}
+
+/* Side nav Styles
+=============================================*/
+.category-side-menu {
+  color: #343434;
+}
+
+.category-side-menu.ant-menu-inline .ant-menu-submenu-title {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.category-side-menu .ant-menu-submenu-open,
+.category-side-menu .ant-menu-submenu-title:hover {
+  background-color: #fddf8094;
+  color: #343434;
+}
+
+.category-side-menu .ant-menu-item:hover {
+  background-color: #d1ddde;
+  color: #36859d;
+}
+
+.category-side-menu .ant-menu-submenu-title {
+  border-right: 3px solid transparent;
+  transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
+    border-color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
+    background 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
+    padding 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.category-side-menu .ant-menu-submenu-open .ant-menu-submenu-title,
+.category-side-menu .ant-menu-submenu-title:hover {
+  border-right: 3px solid #fddf80;
+}
+
+.category-side-menu .ant-menu-submenu,
+.category-side-menu .ant-menu-submenu-inline,
+.category-side-menu .ant-menu-inline .ant-menu-item {
+  margin-bottom: 1px;
+  margin-top: 1px;
+}
+
+.category-side-menu .menu-wrapper > i {
+  padding-right: 20px;
 }

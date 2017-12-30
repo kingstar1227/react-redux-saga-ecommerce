@@ -221,3 +221,48 @@
 .fa-credit-card:before {
   content: "\f09d";
 }
+
+.fa-clock-o:before {
+  content: "\f017";
+}
+
+.fa-shopping-bag:before {
+  content: "\f290";
+}
+
+.fa-tv:before,
+.fa-television:before {
+  content: "\f26c";
+}
+
+.fa-tags:before {
+  content: "\f02c";
+}
+
+.fa-diamond:before {
+  content: "\f219";
+}
+
+.fa-shopping-bag:before {
+  content: "\f290";
+}
+.fa-shopping-basket:before {
+  content: "\f291";
+}
+
+.fa-slideshare:before {
+  content: "\f1e7";
+}
+
+.fa-soccer-ball-o:before,
+.fa-futbol-o:before {
+  content: "\f1e3";
+}
+
+.fa-home:before {
+  content: "\f015";
+}
+
+.fa-shirtsinbulk:before {
+  content: "\f214";
+}
