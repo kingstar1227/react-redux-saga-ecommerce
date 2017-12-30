@@ -49,11 +49,6 @@
   color: #343434;
 }
 
-.category-link-wrap > div {
-  position: relative;
-  background-size: cover;
-}
-
 @media all and (max-width: 768px) {
   .category-link-wrap {
     width: 100%;
@@ -86,6 +81,12 @@
     background-color: #ffffff;
     color: #343434;
   }
+
+  .category-link-wrap > div {
+    position: relative;
+    background-size: cover;
+  }
+
 }
 
 @media all and (min-width: 768px)  and (max-width: 2000px) {
@@ -111,5 +112,15 @@
   .category-actions span {
     margin: 66px 10% 0 10%;
     font-size: 22px;
+  }
+
+  .category-link-wrap > div:hover {
+    background-size: 110% 110%;
+  }
+
+  .category-link-wrap > div {
+    position: relative;
+    background-size: 100% 100%;
+    transition: all 1s;
   }
 }

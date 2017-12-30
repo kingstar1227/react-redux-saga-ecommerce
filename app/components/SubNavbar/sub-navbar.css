@@ -21,3 +21,11 @@
 .sub-navbar-wrap .ant-menu-horizontal {
   border: none;
 }
+
+.sub-navbar-wrap .ant-menu-horizontal {
+  line-height: 65px;
+}
+
+.sub-navbar-wrap .ant-menu {
+  font-size: 13px;
+}
