@@ -6,7 +6,7 @@
 
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
-import { Breadcrumb } from 'antd';
+import Breadcrumb from 'antd/lib/breadcrumb';
 
 // Routes name and value
 const breadcrumbNameMap = {
