@@ -272,3 +272,11 @@
 .fa-bars:before {
   content: "\f0c9";
 }
+
+.fa-eye:before {
+  content: "\f06e";
+}
+
+.fa-heart:before {
+  content: "\f004";
+}

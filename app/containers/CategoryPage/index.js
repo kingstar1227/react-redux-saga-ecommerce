@@ -22,6 +22,7 @@ import ProductFilters from './ProductFilters';
 import ProductAdvert from './ProductAdvert';
 
 import PaginationForm from './PaginationForm';
+import ProductCard from './ProductCard';
 
 import makeSelectCategoryPage from './selectors';
 import reducer from './reducer';
@@ -34,7 +35,7 @@ export class CategoryPage extends React.Component {
   // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <div style={{marginBottom: 32}}>
+      <div>
         <div className="wrap-res-nav">
           <SubNavbar />
         </div>
@@ -42,6 +43,7 @@ export class CategoryPage extends React.Component {
         <Row type="flex" justify="center">
           <Col xs={24} sm={24} md={24} lg={24} xl={22} xxl={20}>
           <PaginationForm />
+          <ProductCard />
           </Col>
         </Row>
       </div>
