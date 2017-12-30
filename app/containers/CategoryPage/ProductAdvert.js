@@ -18,7 +18,7 @@ export class ProductAdvert extends Component {
           <span>UP TO 20% OFF</span>
         </div>
         <div className="product-advert-btn-wrap">
-          <button onClick={() => dispatchRoute('/product')}>Shop Now</button>
+          <button onClick={() => dispatchRoute('/category/product/')}>Shop Now</button>
         </div>
       </div>
     );

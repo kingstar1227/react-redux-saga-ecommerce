@@ -33,7 +33,7 @@ export class ProductButton extends PureComponent {
           </button>
         </Tooltip>
         <Tooltip title={<div>View product</div>} placement="right">
-          <button onClick={() => dispatchRoute('/product')}>
+          <button onClick={() => dispatchRoute('/category/product/')}>
             <i style={{fontSize: 24}}className="fa fa-eye fa-fw" aria-hidden="true" />
           </button>
         </Tooltip>

@@ -11,11 +11,11 @@ import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
 
+import PageHero from 'components/PageHero';
 import SubNavbar from 'components/SubNavbar';
 import injectSaga from 'utils/injectSaga';
 import injectReducer from 'utils/injectReducer';
 
-import PageHero from './PageHero';
 import Category from './Category';
 import PopularProducts from './PopularProducts';
 import ProductFilters from './ProductFilters';
