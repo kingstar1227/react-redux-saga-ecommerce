@@ -11,6 +11,7 @@
   overflow: hidden;
   align-items: center;
   text-align: center;
+  margin-bottom: 32px;
 }
 
 .category-bd-layer {
@@ -95,6 +96,12 @@
   margin-top: 0px;
 }
 
+.category-side-menu.ant-menu-inline {
+  border-right: none;
+  border: 1px solid #dbdbdb;
+  border-top: none;
+}
+
 .category-side-menu .ant-menu-submenu-open,
 .category-side-menu .ant-menu-submenu-title:hover {
   background-color: #fddf8094;
@@ -122,10 +129,110 @@
 .category-side-menu .ant-menu-submenu,
 .category-side-menu .ant-menu-submenu-inline,
 .category-side-menu .ant-menu-inline .ant-menu-item {
-  margin-bottom: 1px;
-  margin-top: 1px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.category-side-menu .ant-menu-submenu:last-of-type,
+.category-side-menu .ant-menu-submenu-inline:last-of-type,
+.category-side-menu .ant-menu-inline .ant-menu-item:last-of-type {
+  border-bottom: 1px solid transparent;
 }
 
 .category-side-menu .menu-wrapper > i {
   padding-right: 20px;
+}
+
+.menu-drawer-headers {
+  border-style: solid;
+  border-width: 1px 1px 0 1px;
+  border-color: #dbdbdb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 8px;
+  width: 100%;
+}
+
+.menu-drawer-title {
+  display: block;
+  text-align: center;
+  max-width: 100%;
+  font-size: 24px;
+  padding: 16px 8px;
+  color: #4e869e;
+  background-color: #fff;
+  -webkit-box-flex: 10;
+  -ms-flex: 10;
+  flex: 10;
+}
+
+/* Popular products
+=========================================*/
+.popular-products-wrap {
+  display: block;
+  width: 100%;
+  min-height: 250px;
+  border: 1px solid #dbdbdb;
+  padding: 8px;
+  font-size: 13px;
+  margin-bottom: 32px;
+}
+
+.popular-products {
+  margin-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.popular-products-image > img {
+  height: 100px;
+}
+
+.popular-products-image {
+  display: block;
+  width:;
+  height: ;
+}
+.popular-products-details {
+  display: block;
+  padding: 0 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popular-products-stars {
+  margin-top: 16px;
+}
+
+.popular-products-title {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  color: #4e869e;
+}
+
+.popular-products-stars .kuma-rate-item .uxcore-icon.kuma-rate-icon-active {
+  color: #4e869e !important;
+  font-size: 20px;
+}
+
+.popular-products-stars  .uxcore-icon {
+  font-size: 20px;
+}
+
+.rate-demo-wrp .ant-rate {
+  color: #fddf80;
 }

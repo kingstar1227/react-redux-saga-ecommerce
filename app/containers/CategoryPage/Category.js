@@ -54,9 +54,9 @@ const Products = [
 
 export class Category extends Component {
   // submenu keys of first level
-  rootSubmenuKeys = [ '0', '1', '2', '3', '4', '5', '6', '7', 8];
+  rootSubmenuKeys = ["0", "1", "2", "3", "4", "5", "6", "7", 8];
   state = {
-    openKeys: ['0']
+    openKeys: ["0"]
   };
   onOpenChange = openKeys => {
     const latestOpenKey = openKeys.find(
@@ -72,29 +72,34 @@ export class Category extends Component {
   };
   render() {
     return (
-      <Menu
-        mode="inline"
-        openKeys={this.state.openKeys}
-        onOpenChange={this.onOpenChange}
-        style={{ width: 256 }}
-        className="category-side-menu"
-      >
-        {Products.map((product, index) => (
-          <SubMenu
-            key={`${index}`}
-            title={
-              <span className="menu-wrapper">
-                <i className={`fa fa-${product.icons}`} aria-hidden="true" />
-                <span>{product.name}</span>
-              </span>
-            }
-          >
-            {product.items.map((value, indexs) => (
-              <Menu.Item key={indexs}>{value}</Menu.Item>
-            ))}
-          </SubMenu>
-        ))}
-      </Menu>
+      <div style={{marginBottom: 32}}>
+        <div className="menu-drawer-headers">
+          <span className="menu-drawer-title">Categories</span>
+        </div>
+        <Menu
+          mode="inline"
+          openKeys={this.state.openKeys}
+          onOpenChange={this.onOpenChange}
+          style={{ width: "100%" }}
+          className="category-side-menu"
+        >
+          {Products.map((product, index) => (
+            <SubMenu
+              key={`${index}`}
+              title={
+                <span className="menu-wrapper">
+                  <i className={`fa fa-${product.icons}`} aria-hidden="true" />
+                  <span>{product.name}</span>
+                </span>
+              }
+            >
+              {product.items.map((value, indexs) => (
+                <Menu.Item key={indexs}>{value}</Menu.Item>
+              ))}
+            </SubMenu>
+          ))}
+        </Menu>
+      </div>
     );
   }
 }

@@ -15,8 +15,10 @@ import SubNavbar from 'components/SubNavbar';
 import injectSaga from 'utils/injectSaga';
 import injectReducer from 'utils/injectReducer';
 
-import Category from './Category';
 import PageHero from './PageHero';
+import Category from './Category';
+import PopularProducts from './PopularProducts';
+
 import makeSelectCategoryPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
@@ -36,6 +38,7 @@ export class CategoryPage extends React.Component {
         <Row type="flex" justify="center">
           <Col xs={24} sm={24} md={24} lg={24} xl={22} xxl={20}>
             <Category />
+            <PopularProducts />
           </Col>
         </Row>
       </div>
