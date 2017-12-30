@@ -5,7 +5,7 @@
  */
 
 import React from 'react';
-import { Row, Col } from 'antd';
+import { Row, Col, Pagination } from 'antd';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
@@ -52,6 +52,9 @@ export class CategoryPage extends React.Component {
               <div className="cats-wapper-two">
                 <PaginationForm />
                 <ProductCard />
+                <div className="pagination-wrap">
+                  <Pagination defaultCurrent={1} total={50} />
+                </div>
               </div>
             </div>
           </Col>
