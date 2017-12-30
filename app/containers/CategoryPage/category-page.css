@@ -151,7 +151,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 8px;
   width: 100%;
 }
 
@@ -178,6 +177,7 @@
   padding: 8px;
   font-size: 13px;
   margin-bottom: 32px;
+  background-color: #ffffff;
 }
 
 .popular-products {
@@ -245,6 +245,7 @@
   border: 1px solid #dbdbdb;
   padding: 8px;
   margin-bottom: 32px;
+  background-color: #ffffff;
 }
 
 .filter-table-btn-wrap {
@@ -374,6 +375,7 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   color: #343434;
+  background-color: #ffffff;
 }
 
 .filter-form-title {
@@ -523,15 +525,16 @@
   }
 }
 
-@media screen and (min-width: 960px) and (max-width: 1000px) {
+@media screen and (min-width: 900px) and (max-width: 1000px) {
   .category-product > li {
     width: calc((100% / 3) - 24px);
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 960px) {
+@media screen and (min-width: 740px) and (max-width: 900px) {
   .category-product > li {
-    width: calc((100% / 3) - 24px);
+    width: calc((100% / 2) - 24px);
+    margin: 12px;
   }
 }
 
@@ -552,14 +555,9 @@
   .category-product {
     margin: 0 auto;
   }
-
-  .category-product > li {
-    width: calc((100% / 2) - 24px);
-    margin: 12px;
-  }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 740px) {
   .category-product > li {
     width: calc(100% - 24px);
     margin: 12px;
@@ -599,7 +597,7 @@
   }
 
   .category-product {
-    margin-top: 8px;
+    background-color: #ffffff;
   }
 
   .category-layout-wrap {
@@ -631,4 +629,21 @@
     text-align: -webkit-center;
     text-align: center;
   }
+}
+
+/* Wrappers for components
+==========================================*/
+.cats-wapper {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.cats-wapper-one {
+  width: 256px;
+  padding-right: 16px;
+}
+
+.cats-wapper-two {
+  width: calc(100% - 256px);
+  padding-left: 16px;
 }

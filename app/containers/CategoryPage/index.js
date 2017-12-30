@@ -42,8 +42,18 @@ export class CategoryPage extends React.Component {
         <PageHero />
         <Row type="flex" justify="center">
           <Col xs={24} sm={24} md={24} lg={24} xl={22} xxl={20}>
-          <PaginationForm />
-          <ProductCard />
+            <div className="cats-wapper">
+              <div className="cats-wapper-one">
+                <Category />
+                <PopularProducts />
+                <ProductFilters />
+                <ProductAdvert />
+              </div>
+              <div className="cats-wapper-two">
+                <PaginationForm />
+                <ProductCard />
+              </div>
+            </div>
           </Col>
         </Row>
       </div>
@@ -52,16 +62,16 @@ export class CategoryPage extends React.Component {
 }
 
 CategoryPage.propTypes = {
-  dispatch: PropTypes.func.isRequired,
+  dispatch: PropTypes.func.isRequired
 };
 
 const mapStateToProps = createStructuredSelector({
-  categorypage: makeSelectCategoryPage(),
+  categorypage: makeSelectCategoryPage()
 });
 
 function mapDispatchToProps(dispatch) {
   return {
-    dispatch,
+    dispatch
   };
 }
 
@@ -71,8 +81,3 @@ const withReducer = injectReducer({ key: 'categoryPage', reducer });
 const withSaga = injectSaga({ key: 'categoryPage', saga });
 
 export default compose(withReducer, withSaga, withConnect)(CategoryPage);
-
-            // <Category />
-            // <PopularProducts />
-            // <ProductFilters />
-            // <ProductAdvert />
