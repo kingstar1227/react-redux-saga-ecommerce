@@ -18,6 +18,7 @@ import injectReducer from 'utils/injectReducer';
 import PageHero from './PageHero';
 import Category from './Category';
 import PopularProducts from './PopularProducts';
+import ProductFilters from './ProductFilters';
 
 import makeSelectCategoryPage from './selectors';
 import reducer from './reducer';
@@ -39,6 +40,7 @@ export class CategoryPage extends React.Component {
           <Col xs={24} sm={24} md={24} lg={24} xl={22} xxl={20}>
             <Category />
             <PopularProducts />
+            <ProductFilters />
           </Col>
         </Row>
       </div>

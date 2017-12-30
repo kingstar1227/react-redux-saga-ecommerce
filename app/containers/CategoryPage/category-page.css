@@ -236,3 +236,58 @@
 .rate-demo-wrp .ant-rate {
   color: #fddf80;
 }
+
+
+/* Products Filters
+========================================*/
+.filter-table-wrap {
+  width: 100%;
+  min-height: 200px;
+  border: 1px solid #dbdbdb;
+  padding: 8px;
+  margin-bottom: 32px;
+}
+
+.filter-table-btn-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.filter-table-title {
+  margin: 8px;
+  padding: 8px 0;
+  font-size: 18px;
+  color: #4e869e;
+}
+
+.filter-table-name {
+  padding-right: 4px;
+  color: #343434;
+}
+
+.filter-table-quantity {
+  color: #807d7d;
+}
+
+.filter-table-quantity:active,
+.filter-table-quantity:focus,
+.filter-table-quantity:hover {
+  color: #343434;
+}
+
+.filter-table-btn {
+  padding: 2px 8px;
+  margin: 4px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+
+.filter-table-btn:active,
+.filter-table-btn:focus,
+.filter-table-btn:hover {
+  background-color: #f6f3ee;
+  border: 1px solid #f6f3ee;
+}
