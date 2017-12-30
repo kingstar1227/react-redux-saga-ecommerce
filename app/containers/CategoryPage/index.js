@@ -19,6 +19,7 @@ import PageHero from './PageHero';
 import Category from './Category';
 import PopularProducts from './PopularProducts';
 import ProductFilters from './ProductFilters';
+import ProductAdvert from './ProductAdvert';
 
 import makeSelectCategoryPage from './selectors';
 import reducer from './reducer';
@@ -41,6 +42,7 @@ export class CategoryPage extends React.Component {
             <Category />
             <PopularProducts />
             <ProductFilters />
+            <ProductAdvert />
           </Col>
         </Row>
       </div>
