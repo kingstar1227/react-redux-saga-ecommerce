@@ -312,9 +312,8 @@
   color: #343434;
   font-weight: 500;
   border: 1px solid #ffffff;
-  transition: all .5s;
+  transition: all 0.5s;
 }
-
 
 .product-advert-wrap button:hover {
   background-color: #dbdbdb;
