@@ -587,6 +587,7 @@
 
   .category-product > li {
     border: 1px solid #dbdbdb;
+    box-sizing: border-box;
   }
 }
 
@@ -594,6 +595,7 @@
   .category-product > li {
     border: 1px solid #dbdbdb;
     margin: 0 12px 32px 12px;
+    box-sizing: border-box;
   }
 
   .category-product {
