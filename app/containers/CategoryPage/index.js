@@ -21,6 +21,8 @@ import PopularProducts from './PopularProducts';
 import ProductFilters from './ProductFilters';
 import ProductAdvert from './ProductAdvert';
 
+import PaginationForm from './PaginationForm';
+
 import makeSelectCategoryPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
@@ -32,17 +34,14 @@ export class CategoryPage extends React.Component {
   // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <div>
+      <div style={{marginBottom: 32}}>
         <div className="wrap-res-nav">
           <SubNavbar />
         </div>
         <PageHero />
         <Row type="flex" justify="center">
           <Col xs={24} sm={24} md={24} lg={24} xl={22} xxl={20}>
-            <Category />
-            <PopularProducts />
-            <ProductFilters />
-            <ProductAdvert />
+          <PaginationForm />
           </Col>
         </Row>
       </div>
@@ -70,3 +69,8 @@ const withReducer = injectReducer({ key: 'categoryPage', reducer });
 const withSaga = injectSaga({ key: 'categoryPage', saga });
 
 export default compose(withReducer, withSaga, withConnect)(CategoryPage);
+
+            // <Category />
+            // <PopularProducts />
+            // <ProductFilters />
+            // <ProductAdvert />

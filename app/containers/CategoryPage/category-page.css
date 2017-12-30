@@ -357,3 +357,52 @@
   font-size: 20px;
   padding-top: 8px;
 }
+
+/* Pagination form Styles
+=================================================*/
+.filter-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 60px;
+  border: 1px solid #dbdbdb;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 16px 32px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: #343434;
+}
+
+.filter-form-title {
+  padding-right: 8px;
+  color: #343434;
+  font-size: 16px;
+}
+
+.filter-form .ant-select-selection,
+.filter-form .ant-input {
+  border: 1px solid #dbdbdb;
+}
+
+.btn-drawer {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 500px) {
+  .filter-form {
+    padding: 8px 4px;
+    flex-wrap: wrap;
+  }
+
+  .filter-form > * {
+    flex: 0 0 100%;
+    margin-bottom: 16px;
+  }
+
+  .btn-drawer {
+    display: none;
+  }
+}
