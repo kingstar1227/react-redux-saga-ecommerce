@@ -42,9 +42,9 @@ export default function App() {
         >
           <Switch>
             <Route exact path="/" component={HomePage} />
-            <Route path="/signin" component={LoginPage} />
-            <Route path="/register" component={SignupPage} />
-            <Route path="/category" component={CategoryPage} />
+            <Route path="/signin/" component={LoginPage} />
+            <Route path="/register/" component={SignupPage} />
+            <Route path="/category/" component={CategoryPage} />
             <Route component={NotFoundPage} />
           </Switch>
         </Content>
