@@ -15,6 +15,7 @@ import './page-hero.css';
 const breadcrumbNameMap = {
   '/': 'Home',
   '/category': 'Shop',
+  '/category/product': 'Men Clothing',
 };
 
 class PageHero extends React.Component {
