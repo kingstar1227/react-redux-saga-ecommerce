@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Rate, Button } from 'antd';
 import Select from 'antd/lib/select';
+import { connect } from "react-redux";
+import { push } from "react-router-redux";
 
 const Option = Select.Option;
 
@@ -10,6 +12,7 @@ function handleChange(value) {
 
 export class ProductInfo extends Component {
   render() {
+    const { dispatchRoute } = this.props;
     return (
       <div className="product-info-wrap">
         <header className="product-page-title">Laoreet Congue</header>
@@ -64,7 +67,7 @@ export class ProductInfo extends Component {
             </Select>
           </div>
           <div className="">
-            <Button type="secondary" size="large">
+            <Button type="secondary" size="large" onClick={() => dispatchRoute('/product/checkout/')}>
               ADD TO CART
             </Button>
           </div>
@@ -91,4 +94,8 @@ export class ProductInfo extends Component {
   }
 }
 
-export default ProductInfo;
+const mapDispatchToProps = (dispatch) => ({
+  dispatchRoute: route => dispatch(push(route))
+});
+
+export default connect(null, mapDispatchToProps)(ProductInfo);
