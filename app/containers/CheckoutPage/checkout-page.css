@@ -131,16 +131,6 @@
 /* Category page styles
 =======================================================*/
 @media screen and (min-width: 768px) {
-  .wrap-res-nav2 {
-    display: block;
-    width: 100%;
-    height: 70px;
-  }
-
-  .wrap-res-nav2 > .sub-navbar-wrap {
-    background-color: #36839d;
-  }
-
   .checkout-form-wrap  > form > span {
     display: flex;
   }
@@ -157,6 +147,16 @@
     margin-left: 4px;
   }
 
+}
+
+.wrap-res-nav2 {
+  display: block;
+  width: 100%;
+  height: 70px;
+}
+
+.wrap-res-nav2 > .sub-navbar-wrap {
+  background-color: #36839d;
 }
 
 @media screen and (max-width: 768px) {

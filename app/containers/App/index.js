@@ -24,6 +24,7 @@ import SignupPage from 'containers/SignupPage/Loadable';
 import CategoryPage from 'containers/CategoryPage/Loadable';
 import ProductPage from 'containers/ProductPage/Loadable';
 import CheckoutPage from 'containers/CheckoutPage/Loadable';
+import CartPage from 'containers/CartPage/Loadable';
 
 
 import Footer from 'components/Footer';
@@ -50,6 +51,7 @@ export default function App() {
             <Route exact path="/category/" component={CategoryPage} />
             <Route path="/category/product/" component={ProductPage} />
             <Route path="/products/checkout/" component={CheckoutPage} />
+            <Route path="/products/cart/" component={CartPage} />
             <Route component={NotFoundPage} />
           </Switch>
         </Content>

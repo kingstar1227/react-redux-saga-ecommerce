@@ -196,7 +196,7 @@ export class CheckoutPage extends React.Component {
                   </FormItem>
 
                   <FormItem>
-                    <Button type="primary">Submit</Button>
+                    <Button type="primary" size="large">Submit</Button>
                   </FormItem>
                 </Form>
               </div>
