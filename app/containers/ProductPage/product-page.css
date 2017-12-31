@@ -10,6 +10,8 @@
 
 .ant-modal-content {
   background-color: transparent;
+  box-shadow: none;
+  text-align: center;
 }
 
 .ant-modal-close {
@@ -18,6 +20,12 @@
 
 .ant-modal-close:hover {
   color: #36859d;
+}
+
+.ant-modal-close-x {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
 }
 
 /* Rating Stars

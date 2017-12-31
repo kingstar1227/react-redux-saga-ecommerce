@@ -67,7 +67,7 @@ export class ProductInfo extends Component {
             </Select>
           </div>
           <div className="">
-            <Button type="secondary" size="large" onClick={() => dispatchRoute('/product/checkout/')}>
+            <Button type="secondary" size="large" onClick={() => dispatchRoute('/products/checkout/')}>
               ADD TO CART
             </Button>
           </div>

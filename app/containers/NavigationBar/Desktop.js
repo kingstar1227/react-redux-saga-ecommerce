@@ -37,7 +37,7 @@ export class Desktop extends Component {
         </li>
         <li className="nav-item-left">
           <button
-            onClick={() => dispatchRoute("/checkout")}
+            onClick={() => dispatchRoute("/products/checkout/")}
             className="btns-label"
           >
             Checkout

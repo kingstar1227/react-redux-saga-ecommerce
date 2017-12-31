@@ -23,6 +23,8 @@ import LoginPage from 'containers/LoginPage/Loadable';
 import SignupPage from 'containers/SignupPage/Loadable';
 import CategoryPage from 'containers/CategoryPage/Loadable';
 import ProductPage from 'containers/ProductPage/Loadable';
+import CheckoutPage from 'containers/CheckoutPage/Loadable';
+
 
 import Footer from 'components/Footer';
 
@@ -47,6 +49,7 @@ export default function App() {
             <Route path="/register/" component={SignupPage} />
             <Route exact path="/category/" component={CategoryPage} />
             <Route path="/category/product/" component={ProductPage} />
+            <Route path="/products/checkout/" component={CheckoutPage} />
             <Route component={NotFoundPage} />
           </Switch>
         </Content>
