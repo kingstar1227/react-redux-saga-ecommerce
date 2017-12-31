@@ -158,12 +158,6 @@
   background-color: #7abe95;
 }
 
-.product-sheet-body {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  font-size: 14px;
-}
-
 .product-related-product {
   border-bottom: 2px solid #b3afaf;
   padding-top: 8px;
@@ -226,6 +220,26 @@
 
 .product-related-name > span:last-child {
   font-weight: 700;
+}
+
+/* Tabs
+================================================*/
+.tabs-wrap {
+  padding: 0 16px;
+  margin-bottom: 32px;
+}
+
+.ant-tabs-nav .ant-tabs-tab-active {
+  font-weight: 600;
+}
+
+.ant-tabs-ink-bar {
+  background-color: #000;
+  height: 3px;
+}
+
+.ant-tabs-nav .ant-tabs-tab {
+  padding: 20px 16px;
 }
 
 /* Media Queries
