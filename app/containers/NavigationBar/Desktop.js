@@ -50,7 +50,7 @@ export class Desktop extends Component {
         </li>
         <li className="nav-item-left">
           <button
-            onClick={() => dispatchRoute("/category")}
+            onClick={() => dispatchRoute("/category/")}
             className="btns-icon"
           >
             <Icon type="heart" style={styles.icon} />

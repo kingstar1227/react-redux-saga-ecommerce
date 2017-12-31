@@ -26,7 +26,7 @@ class ProductBanner extends React.PureComponent {
             backgroundSize: "100% 100%"
           }}
         >
-          <a onClick={() => dispatchRoute("/category")} />
+          <a onClick={() => dispatchRoute("/category/")} />
         </div>
         <div
           style={{
@@ -34,7 +34,7 @@ class ProductBanner extends React.PureComponent {
             backgroundSize: "100% 100%"
           }}
         >
-          <a onClick={() => dispatchRoute("/category")} />
+          <a onClick={() => dispatchRoute("/category/")} />
         </div>
       </div>
     );

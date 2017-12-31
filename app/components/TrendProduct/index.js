@@ -28,7 +28,7 @@ class TrendProduct extends React.PureComponent { // eslint-disable-line react/pr
           style={{ backgroundImage: `url(${photoTwo})` }}
         >
           <div className="black-layer" />
-          <Link to="/category" />
+          <Link to="/category/" />
           <div className="trending-banner">
             <span />
             <div className="trending-banner-text">
@@ -47,7 +47,7 @@ class TrendProduct extends React.PureComponent { // eslint-disable-line react/pr
           style={{ backgroundImage: `url(${photoThree})` }}
         >
           <div className="black-layer" />
-          <Link to="/category" />
+          <Link to="/category/" />
           <div className="trending-banner">
             <span />
             <div className="trending-banner-text">
@@ -66,7 +66,7 @@ class TrendProduct extends React.PureComponent { // eslint-disable-line react/pr
           style={{ backgroundImage: `url(${photoOne})` }}
         >
           <div className="black-layer" />
-          <Link to="/category" />
+          <Link to="/category/" />
           <div className="trending-banner">
             <span />
             <div className="trending-banner-text">
