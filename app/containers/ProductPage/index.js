@@ -17,6 +17,7 @@ import SubNavbar from 'components/SubNavbar';
 import ProductImage from './ProductImage';
 import ProductInfo from './ProductInfo';
 import ProductReview from './ProductReview';
+import RelateProducts from './RelateProducts';
 
 import injectSaga from 'utils/injectSaga';
 import injectReducer from 'utils/injectReducer';
@@ -52,6 +53,11 @@ export class ProductPage extends React.Component {
             <div className="tabs-wrap">
               <ProductReview />
             </div>
+          </Col>
+        </Row>
+        <Row type="flex" justify="center">
+          <Col xs={24} sm={24} md={24} lg={24} xl={20} xxl={18}>
+            <RelateProducts />
           </Col>
         </Row>
       </div>
