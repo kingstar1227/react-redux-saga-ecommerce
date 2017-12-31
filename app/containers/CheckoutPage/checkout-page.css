@@ -1,0 +1,178 @@
+.checkout-table-tile {
+  background-color: #7abe95;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  display: block;
+  padding: 14px 32px;
+  width: 100%;
+}
+
+.checkout-page-wrap {
+  border: 1px solid #dbdbdb;
+}
+
+.checkout-mini-wrap {
+  border-right: 1px solid #dbdbdb;
+}
+
+@media screen and (min-width: 1084px) {
+  .checkout-page-wrap {
+    margin: 20px auto;
+    max-width: 1120px;
+  }
+}
+
+@media screen and (min-width: 990px) and (max-width: 1084px) {
+  .checkout-page-wrap {
+    margin: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
+  .checkout-page-wrap {
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .checkout-page-wrap {
+    flex-direction: column;
+    flex: 1 1 100%;
+  }
+
+  .pd-20 {
+    padding: 16px;
+  }
+
+  .checkout-page-wrap {
+    margin-top: 16px;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .checkout-page-wrap > div {
+    flex: 1 1 50%;
+  }
+
+  .pd-20 {
+    padding: 20px;
+  }
+
+  .checkout-page-wrap {
+    margin-top: 40px;
+    display: flex;
+  }
+}
+
+.checkout-input-wrap > * {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-input-wrap > label {
+  padding: 4px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.checkout-page-total ul {
+  width: 100%;
+  background-color: #f7f7f7;
+}
+
+.checkout-page-total ul > li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout-page-total ul > li:first-child span {
+  border-width: 0 0 1px 0 !important;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.checkout-page-total ul > li:last-child span {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.checkout-page-total ul > li:last-child span:last-child {
+  color: #da554d;
+}
+
+.checkout-page-total ul > li > span {
+  border-style: solid;
+  border-color: #dbdbdb;
+  flex: 1;
+  padding: 24px 16px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.checkout-page-total ul > li span:nth-child(odd) {
+  border-width: 0 1px 1px 0;
+}
+
+.checkout-page-total ul > li span:nth-child(even) {
+  border-width: 0 0 1px 1px;
+}
+
+.payments-methods {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.payments-methods img {
+  width: 100%;
+}
+
+/* Category page styles
+=======================================================*/
+@media screen and (min-width: 768px) {
+  .wrap-res-nav2 {
+    display: block;
+    width: 100%;
+    height: 70px;
+  }
+
+  .wrap-res-nav2 > .sub-navbar-wrap {
+    background-color: #36839d;
+  }
+
+  .checkout-form-wrap  > form > span {
+    display: flex;
+  }
+
+  .checkout-form-wrap > form > span > * {
+    flex: 1 1 50%;
+  }
+
+  .checkout-form-wrap > form > span > *:first-of-type {
+    margin-right: 4px;
+  }
+
+  .checkout-form-wrap > form > span > *:last-of-type {
+    margin-left: 4px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .wrap-res-nav2 {
+    display: none;
+  }
+}
+
+/* Form
+=============================================*/
+.ant-select-selection {
+  border: 1px solid #dbdbdb;
+  color: #343434;
+}
+
+.ant-input {
+  border: 1px solid #dbdbdb;
+  color: #343434;
+}
