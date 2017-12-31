@@ -284,3 +284,20 @@
 .fa-arrows-alt:before {
   content: "\f0b2";
 }
+
+.fa-twitter:before {
+  content: "\f099";
+}
+
+.fa-facebook-f:before,
+.fa-facebook:before {
+  content: "\f09a";
+}
+
+.fa-envelope-o:before {
+  content: "\f003";
+}
+
+.fa-whatsapp:before {
+  content: "\f232";
+}

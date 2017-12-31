@@ -20,23 +20,16 @@
   color: #36859d;
 }
 
-
-/* Main wrapper
-===============================================================*/
-.product-page-main {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
 /* Rating Stars
 ==================================================================*/
-.rate-demo-wrp {
-  display: inline-block;
+.ant-rate {
+  color: #fddf80;
+  font-size: 16px;
 }
 
-/* Related products Carousels
-===========================================================*/
-
+.rate-demo-wrp {
+  margin-bottom: 16px;
+}
 
 /* Album  styles
 ================================================================*/
@@ -59,8 +52,9 @@
 .product-page-img-btn {
   width: 130px;
   padding: 10px;
-  background-color: rgba(250, 250, 250, .75);
+  background-color: rgba(250, 250, 250, 0.75);
   margin-bottom: 70px;
+  color: #343434;
 }
 
 .product-page-img-icon {
@@ -69,6 +63,17 @@
 
 /* Description styles
 ===============================================================*/
+.product-info-wrap {
+  padding-left: 32px;
+  padding-right: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .product-info-wrap {
+    margin: 32px 0;
+  }
+}
+
 .product-page-title {
   font-size: 28px;
   color: #343434;
@@ -88,9 +93,9 @@
   border-width: 1px 0;
   border-color: #b3afaf;
   border-style: solid;
-  margin: 8px auto;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  margin: 0px 8px 32px 0px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   font-size: 14px;
 }
 
@@ -98,17 +103,17 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 16px;
-  padding-bottom: 16px;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
 }
 
 .product-refinement-form > div {
-  margin: 8px;
+  margin-right: 32px;
+  margin-bottom: 16px;
 }
 
 .product-refinement-title {
@@ -118,27 +123,9 @@
   font-weight: 600;
 }
 
-.product-addto-cart {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  width: 100%;
-}
-
-.product-addto-cart > button {
-  width: 150px;
-  height: 40px;
-  background-color: #7abe95;
-  color: #fff;
-  margin: 10px;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
 .product-share-icons {
   width: 100%;
-  margin: 50px 10px 16px 10px;
+  margin: 0px 10px;
 }
 
 .product-share-icons > header {
@@ -154,8 +141,8 @@
   display: flex;
   font-size: 22px;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 200px;
 }
 
@@ -194,13 +181,13 @@
   width: 100%;
   min-height: 310px;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   text-align: center;
   justify-content: space-around;
 }
 
 .product-related-wrap > div {
-  width: calc(100%  / 5 - 32px);
+  width: calc(100% / 5 - 32px);
   height: 310px;
   margin-top: 32px;
   margin-bottom: 16px;
@@ -249,7 +236,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 990px){
+@media screen and (min-width: 768px) and (max-width: 990px) {
   .row-album-wrap {
     padding: 20px;
   }
@@ -265,8 +252,10 @@
     width: 100%;
     height: 100%;
     padding-right: 16px;
+    padding-left: 16px;
     justify-content: flex-end;
     margin-bottom: 32px;
+    margin-top: 32px;
   }
 
   .product-page-metas {
@@ -274,7 +263,7 @@
   }
 
   .product-page-metas span {
-    padding-right: 16px
+    padding-right: 16px;
   }
 
   .product-sheet-review {
@@ -283,8 +272,8 @@
 
   .product-related-wrap {
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 }
 
@@ -296,8 +285,8 @@
 
   .product-refinement-form {
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 
   .product-sheet-review {
@@ -309,12 +298,17 @@
   }
 
   .product-related-wrap {
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-    }
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
 
   .product-current-descptn,
   .product-page-title {
     margin: 16px 8px;
+  }
+
+  .product-page-img-div {
+    padding-right: 16px;
+    padding-left: 16px;
   }
 }
