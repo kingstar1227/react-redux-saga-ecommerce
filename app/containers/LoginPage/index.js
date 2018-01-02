@@ -4,28 +4,37 @@
  *
  */
 
-import React from "react";
-import { Form, InputNumber, Input, Icon, Checkbox, Button } from "antd";
+import React from 'react';
+import { Form, InputNumber, Input, Icon, Checkbox, Button } from 'antd';
 
-import PropTypes from "prop-types";
-import { connect } from "react-redux";
-import { Link } from "react-router-dom";
-import { push } from "react-router-redux";
-import { createStructuredSelector } from "reselect";
-import { compose } from "redux";
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { push } from 'react-router-redux';
+import { createStructuredSelector } from 'reselect';
+import { compose } from 'redux';
 
-import injectSaga from "utils/injectSaga";
-import injectReducer from "utils/injectReducer";
-import makeSelectLoginPage, { makeSelectLogin } from "./selectors";
-import reducer from "./reducer";
-import saga from "./saga";
+import injectSaga from 'utils/injectSaga';
+import injectReducer from 'utils/injectReducer';
+import makeSelectLoginPage, { makeSelectLogin } from './selectors';
+import reducer from './reducer';
+import saga from './saga';
 
 // Css
-import "./login-page.css";
+import './login-page.css';
 
 // Constants
 const FormItem = Form.Item;
-
+const formItemLayout = {
+  labelCol: {
+    xs: { span: 24 },
+    sm: { span: 24 }
+  },
+  wrapperCol: {
+    xs: { span: 24 },
+    sm: { span: 24 }
+  }
+};
 
 class LoginPage extends React.Component {
   state = {};
@@ -34,11 +43,20 @@ class LoginPage extends React.Component {
     e.preventDefault();
     this.props.form.validateFields((err, values) => {
       if (!err) {
-        console.log("Received values of form: ", values);
+        console.log('Received values of form: ', values);
         this.props.dispatchRoute('/dashboard');
       }
     });
   };
+
+  checkConfirm = (rule, value, callback) => {
+    const form = this.props.form;
+    if (value && this.state.confirmDirty) {
+      form.validateFields(["confirm"], { force: true });
+    }
+    callback();
+  };
+
   render() {
     const { getFieldDecorator } = this.props.form;
     return (
@@ -52,11 +70,18 @@ class LoginPage extends React.Component {
           </div>
         </div>
         <div className="login-main">
-          <Form onSubmit={this.handleSubmit} className="login-form">
-            <FormItem>
-              {getFieldDecorator("userName", {
+          <Form onSubmit={this.handleSubmit}>
+            <FormItem {...formItemLayout}>
+              {getFieldDecorator('email', {
                 rules: [
-                  { required: true, message: "Please input your username!" }
+                  {
+                    type: 'email',
+                    message: 'The input is not valid E-mail!'
+                  },
+                  {
+                    required: true,
+                    message: 'Please input your E-mail!'
+                  }
                 ]
               })(
                 <Input
@@ -64,14 +89,20 @@ class LoginPage extends React.Component {
                   prefix={
                     <Icon type="user" style={{ color: "rgba(0,0,0,.25)" }} />
                   }
-                  placeholder="Username"
+                  placeholder="Email"
                 />
               )}
             </FormItem>
-            <FormItem>
-              {getFieldDecorator("password", {
+            <FormItem {...formItemLayout}>
+              {getFieldDecorator('password', {
                 rules: [
-                  { required: true, message: "Please input your Password!" }
+                  {
+                    required: true,
+                    message: 'Please input your password!'
+                  },
+                  {
+                    validator: this.checkConfirm
+                  }
                 ]
               })(
                 <Input
@@ -85,8 +116,8 @@ class LoginPage extends React.Component {
               )}
             </FormItem>
             <FormItem>
-              {getFieldDecorator("remember", {
-                valuePropName: "checked",
+              {getFieldDecorator('remember', {
+                valuePropName: 'checked',
                 initialValue: true
               })(<Checkbox>Remember me</Checkbox>)}
               <Link className="login-form-forgot" to="/forgot-password">
@@ -122,7 +153,7 @@ const withForm = Form.create();
 
 const withConnect = connect(mapStateToProps, mapDispatchToProps);
 
-const withReducer = injectReducer({ key: "loginPage", reducer });
-const withSaga = injectSaga({ key: "loginPage", saga });
+const withReducer = injectReducer({ key: 'loginPage', reducer });
+const withSaga = injectSaga({ key: 'loginPage', saga });
 
 export default compose(withReducer, withSaga, withConnect, withForm)(LoginPage);

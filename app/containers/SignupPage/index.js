@@ -70,18 +70,6 @@ export class SignupPage extends React.Component {
         sm: { span: 24 }
       }
     };
-    const tailFormItemLayout = {
-      wrapperCol: {
-        xs: {
-          span: 24,
-          offset: 0
-        },
-        sm: {
-          span: 24,
-          offset: 0
-        }
-      }
-    };
 
     return (
       <div className="register-wrap">
