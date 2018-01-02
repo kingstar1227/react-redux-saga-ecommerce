@@ -28,7 +28,7 @@ export class PopularProducts extends Component {
               <div>{product.description}</div>
               <div className="popular-products-stars">
                 <div className="rate-demo-wrp">
-                  <Rate disabled defaultValue={2} />
+                  <Rate disabled defaultValue={2} count={3} />
                 </div>
               </div>
             </div>

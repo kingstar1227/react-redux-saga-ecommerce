@@ -259,7 +259,7 @@
   color: #343434;
   font-weight: 500;
   border: 1px solid #ffffff;
-  transition: all 0.5s;
+  transition: all .5s ease-in-out;
 }
 
 .product-advert-wrap button:hover {
