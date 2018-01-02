@@ -7,7 +7,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { Link } from "react-router-dom";
+import { push } from 'react-router-redux';
 import { createStructuredSelector } from "reselect";
 import { compose } from "redux";
 
@@ -57,7 +57,7 @@ export class SignupPage extends React.Component {
   };
 
   render() {
-    const { getFieldDecorator } = this.props.form;
+    const { dispatchRoute, form: { getFieldDecorator } } = this.props;
     const { autoCompleteResult } = this.state;
 
     const formItemLayout = {
@@ -162,7 +162,7 @@ export class SignupPage extends React.Component {
               >
                 Register
               </Button>
-              Or <Link to="/signin">Sign in!</Link>
+              Or <a onClick={() => dispatchRoute("/signin")}>Sign in!</a>
             </FormItem>
           </Form>
         </div>
@@ -171,20 +171,18 @@ export class SignupPage extends React.Component {
   }
 }
 
-SignupPage.propTypes = {
-  dispatch: PropTypes.func.isRequired
-};
+// SignupPage.propTypes = {
+//   dispatch: PropTypes.func.isRequired
+// };
 
 const mapStateToProps = createStructuredSelector({
   signuppage: makeSelectSignupPage(),
   register: makeSelectRegister()
 });
 
-function mapDispatchToProps(dispatch) {
-  return {
-    dispatch
-  };
-}
+const mapDispatchToProps = dispatch => ({
+  dispatchRoute: route => dispatch(push(route))
+});
 
 const withForm = Form.create();
 
