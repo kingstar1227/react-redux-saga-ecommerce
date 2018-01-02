@@ -25,6 +25,7 @@ import CategoryPage from 'containers/CategoryPage/Loadable';
 import ProductPage from 'containers/ProductPage/Loadable';
 import CheckoutPage from 'containers/CheckoutPage/Loadable';
 import CartPage from 'containers/CartPage/Loadable';
+import Account from 'containers/Account/Loadable';
 
 
 import Footer from 'components/Footer';
@@ -52,6 +53,7 @@ export default function App() {
             <Route path="/category/product/" component={ProductPage} />
             <Route path="/products/checkout/" component={CheckoutPage} />
             <Route path="/products/cart/" component={CartPage} />
+            <Route path="/user/account/" component={Account} />
             <Route component={NotFoundPage} />
           </Switch>
         </Content>

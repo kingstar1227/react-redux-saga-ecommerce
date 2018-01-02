@@ -1,0 +1,42 @@
+.accnt-wrap {
+  background-color: #f6f3ee;
+}
+
+.ant-card-head {
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.ant-input,
+.ant-card-bordered {
+  border: 1px solid #dbdbdb;
+}
+
+
+@media all and (min-width: 768px) {
+  .account-wrap > div > * {
+    margin: 0px 16px 32px 16px;
+  }
+
+  .accnt-wrap {
+    padding-top: 32px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .account-wrap > div > * {
+    margin: 0px 4px 16px 4px;
+  }
+
+  .avatar-wrap {
+    margin: 0px 4px 16px 4px; 
+  }
+
+  .ant-card-body {
+    padding: 8px;
+  }
+
+  .accnt-wrap {
+    padding-top: 16px;
+  }
+}
+

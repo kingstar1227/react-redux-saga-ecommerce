@@ -1,4 +1,6 @@
 import React from 'react';
+import { Spin } from 'antd';
+
 
 // Css
 import './loading-indicator.css';
@@ -28,7 +30,7 @@ export default LoadingIndicator;
 
 export const PlainLoader = () => (
   <FullpageIndicator>
-    <LoadingIndicator />
+    <Spin size="large" />
   </FullpageIndicator>
 );
 
