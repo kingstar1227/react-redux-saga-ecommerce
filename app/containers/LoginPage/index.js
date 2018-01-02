@@ -35,7 +35,7 @@ class LoginPage extends React.Component {
     this.props.form.validateFields((err, values) => {
       if (!err) {
         console.log("Received values of form: ", values);
-        browserHistory.push('/dashboard');
+        this.props.dispatchRoute('/dashboard');
       }
     });
   };

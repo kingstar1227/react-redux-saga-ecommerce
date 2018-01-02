@@ -29,16 +29,16 @@ export default class HomePage extends React.PureComponent {
         <Slider />
         <div className="outer-wrap-grid">
           <Row type="flex" justify="center">
-            <Col xs={24} sm={24} md={24} lg={24} xl={22} xxl={18}>
+            <Col xs={24} sm={24} md={24} lg={24} xl={20} xxl={18}>
               <TrendProduct />
             </Col>
-            <Col xs={24} sm={24} md={24} lg={24} xl={22} xxl={18}>
+            <Col xs={24} sm={24} md={24} lg={24} xl={20} xxl={18}>
               <SloganBanners />
             </Col>
-            <Col xs={24} sm={24} md={24} lg={24} xl={22} xxl={18}>
+            <Col xs={24} sm={24} md={24} lg={24} xl={20} xxl={18}>
               <CategoryLink />
             </Col>
-            <Col xs={24} sm={24} md={24} lg={24} xl={22} xxl={18}>
+            <Col xs={24} sm={24} md={24} lg={24} xl={20} xxl={18}>
               <ProductBanner />
             </Col>
           </Row>
