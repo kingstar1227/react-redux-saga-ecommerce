@@ -41,3 +41,8 @@
 .login-form-button {
   width: 100%;
 }
+
+.login-main {
+  width: 100%;
+  max-width: 450px;
+}

@@ -36,6 +36,11 @@
   margin-top: 16px;
 }
 
+.register-main {
+  width: 100%;
+  max-width: 450px;
+}
+
 .register-main .ant-col-sm-24 {
   text-align: left;
 }
