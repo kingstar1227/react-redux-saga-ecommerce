@@ -31,7 +31,7 @@ class SubNavbar extends React.PureComponent {
     return (
       <div className="sub-navbar-wrap">
         <Row type="flex" justify="center">
-          <Col xs={24} sm={24} md={24} lg={24} xl={20} xxl={18}>
+          <Col xs={24} sm={24} md={24} lg={24} xl={22} xxl={18}>
             <Menu
               onClick={this.handleClick}
               selectedKeys={[current]}
