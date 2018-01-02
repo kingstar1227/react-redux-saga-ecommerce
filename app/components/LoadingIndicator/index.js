@@ -1,7 +1,11 @@
 import React from 'react';
 
+// Css
+import './loading-indicator.css';
+
 import Circle from './Circle';
 import Wrapper from './Wrapper';
+import FullpageIndicator from './FullpageIndicator';
 
 const LoadingIndicator = () => (
   <Wrapper>
@@ -21,3 +25,9 @@ const LoadingIndicator = () => (
 );
 
 export default LoadingIndicator;
+
+export const PlainLoader = () => (
+  <FullpageIndicator>
+    <LoadingIndicator />
+  </FullpageIndicator>
+);
