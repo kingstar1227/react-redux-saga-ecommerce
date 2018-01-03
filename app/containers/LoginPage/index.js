@@ -9,7 +9,6 @@ import { Form, InputNumber, Input, Icon, Checkbox, Button } from 'antd';
 
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
 import { push } from 'react-router-redux';
 import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
@@ -44,7 +43,7 @@ class LoginPage extends React.Component {
     this.props.form.validateFields((err, values) => {
       if (!err) {
         console.log('Received values of form: ', values);
-        this.props.dispatchRoute('/dashboard');
+        this.props.dispatchRoute('/account');
       }
     });
   };
@@ -58,7 +57,7 @@ class LoginPage extends React.Component {
   };
 
   render() {
-    const { getFieldDecorator } = this.props.form;
+    const { dispatchRoute, form: { getFieldDecorator}  } = this.props;
     return (
       <div className="login-wrap">
         <div className="login-header">
@@ -120,9 +119,7 @@ class LoginPage extends React.Component {
                 valuePropName: 'checked',
                 initialValue: true
               })(<Checkbox>Remember me</Checkbox>)}
-              <Link className="login-form-forgot" to="/forgot-password">
-                Forgot password
-              </Link>
+              <a className="login-form-forgot" onClick={() => dispatchRoute("/register")}>Forgot password</a>
               <Button
                 type="primary"
                 size="large"
@@ -131,7 +128,7 @@ class LoginPage extends React.Component {
               >
                 Sign in
               </Button>
-              Or <Link to="/register">register now!</Link>
+              Or <a onClick={() => dispatchRoute("/register")}>Register now!</a>
             </FormItem>
           </Form>
         </div>

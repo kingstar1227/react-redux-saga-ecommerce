@@ -10,12 +10,13 @@
   position: absolute;
   width: 100%;
   z-index: 4;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .sub-navbar-wrap .ant-menu {
-  background-color: rgba(0, 0, 0, 0.05);
   color: #ffffff;
   font-weight: 600;
+  background-color: transparent !important;
 }
 
 .sub-navbar-wrap .ant-menu-horizontal {

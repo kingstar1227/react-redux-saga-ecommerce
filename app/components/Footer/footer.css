@@ -113,14 +113,17 @@
     padding: 16px;
   }
 
-  .footer-contact-wrap {
+/*  .footer-contact-wrap {
     text-align: center;
+  }*/
+
+  .ant-layout-footer {
+    padding: 16px 16px !important;
   }
 
   .footer-nav > ul {
     flex-direction: column;
     flex-wrap: wrap;
-    text-align: center;
   }
 
   .footer-nav > ul > li {

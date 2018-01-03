@@ -1,7 +1,13 @@
 import React from 'react';
+import { Spin } from 'antd';
+
+
+// Css
+import './loading-indicator.css';
 
 import Circle from './Circle';
 import Wrapper from './Wrapper';
+import FullpageIndicator from './FullpageIndicator';
 
 const LoadingIndicator = () => (
   <Wrapper>
@@ -21,3 +27,20 @@ const LoadingIndicator = () => (
 );
 
 export default LoadingIndicator;
+
+export const PlainLoader = () => (
+  <FullpageIndicator>
+    <Spin size="large" />
+  </FullpageIndicator>
+);
+
+export const BubblingLoader = () => (
+  <FullpageIndicator>
+    <div className="spinner">
+      <div className="bounce1" />
+      <div className="bounce2" />
+      <div className="bounce3" />
+    </div>
+  </FullpageIndicator>
+);
+
