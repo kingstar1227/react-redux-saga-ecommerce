@@ -370,6 +370,19 @@
   padding-left: 16px;
 }
 
+.cats-wapper-one {
+  width: 256px;
+  padding-right: 8px;
+  padding-left: 16px;
+}
+
+@media all (max-width: 990px) {
+  .cats-wapper-one {
+    padding-right: 8px;
+    padding-left: 16px;
+  }
+}
+
 /* Pagination styles
 =======================================*/
 .pagination-wrap {

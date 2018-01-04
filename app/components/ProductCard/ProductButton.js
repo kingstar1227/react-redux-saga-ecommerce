@@ -1,7 +1,8 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import { push } from 'react-router-redux';
-import { Tooltip, Icon } from 'antd';
+import { Tooltip, Icon, notification } from 'antd';
+
 
 const Basket = () => (
   <svg
@@ -16,24 +17,47 @@ const Basket = () => (
   </svg>
 );
 
+// Notifications config
+notification.config({
+  placement: 'bottomRight',
+  duration: 2
+});
+
+const handleLikeNotifier = () => {
+  notification.open({
+    message: "You've liked this product",
+    description: 'This is product is saved on your account and you check it out later.',
+    icon: <Icon type="like" style={{color: "#fddf80"}}/>,
+  });
+};
+
+const handleCartNotifier = () => {
+  notification.open({
+    message: "Product has been added to the cart.",
+    description: 'This is product has been added to the cart.',
+    icon: <Icon type="message" style={{color: "#7abe95"}}/>,
+  });
+};
+
+
 export class ProductButton extends PureComponent {
   render() {
     const { dispatchRoute } = this.props;
     return (
       <div className="cats-products-icons">
         <Tooltip title={<div>Add to cart</div>} placement="left">
-          <button>
+          <button onClick={handleCartNotifier}>
             <Basket />
           </button>
         </Tooltip>
         <Tooltip title={<div>Like product</div>} placement="top">
-          <button>
-             <i className="fa fa-heart fa-fw" aria-hidden="true" />
+          <button onClick={handleLikeNotifier}>
+            <Icon type="heart-o" style={{fontSize: 19 }} />
           </button>
         </Tooltip>
         <Tooltip title={<div>View product</div>} placement="right">
           <button onClick={() => dispatchRoute('/category/product/')}>
-            <i style={{fontSize: 24}}className="fa fa-eye fa-fw" aria-hidden="true" />
+            <Icon type="eye-o" style={{fontSize: 24}} />
           </button>
         </Tooltip>
       </div>

@@ -11,7 +11,7 @@ import mboLogo from "!file-loader?name=[mboLogo].[ext]!./images/mboLogo.png";
 // Inline styles
 const styles = {
   icon: {
-    fontSize: 17,
+    fontSize: 19,
     color: "#343434"
   }
 };
@@ -53,7 +53,7 @@ export class Desktop extends Component {
             onClick={() => dispatchRoute("/category/")}
             className="btns-icon"
           >
-            <Icon type="heart" style={styles.icon} />
+            <Icon type="heart-o" style={styles.icon} />
           </button>
         </li>
         <li className="nav-item-left">
