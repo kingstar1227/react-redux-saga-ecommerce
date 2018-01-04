@@ -13,10 +13,6 @@ const styles = {
   icon: {
     fontSize: 19,
     color: "#343434"
-  },
-  icon2: {
-    fontSize: 17,
-    color: "#343434"
   }
 };
 
@@ -57,7 +53,7 @@ export class Desktop extends Component {
             onClick={() => dispatchRoute("/category/")}
             className="btns-icon"
           >
-            <Icon type="heart-o" style={styles.icon2} />
+            <Icon type="heart-o" style={styles.icon} />
           </button>
         </li>
         <li className="nav-item-left">

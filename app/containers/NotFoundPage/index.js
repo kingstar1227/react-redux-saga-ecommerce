@@ -12,14 +12,16 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import { Button } from 'antd';
-import { browserHistory } from 'react-router';
+import { push } from 'react-router-redux';
+import { connect } from 'react-redux';
+
 
 import messages from './messages';
 
 // Css
 import './not-found-page.css';
 
-export default class NotFound extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+export class NotFound extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
     <div className="exception">
@@ -33,10 +35,17 @@ export default class NotFound extends React.PureComponent { // eslint-disable-li
         <FormattedMessage {...messages.header} />
         <div className="actions">
         <br/>
-        <Button size="large" onClick={() =>browserHistory.push("/#")} type="primary">Return to Home</Button>
+        <Button size="large" onClick={() => this.props.dispatchRoute("/#")} type="primary">Return to Home</Button>
         </div>
       </div>
     </div>
     );
   }
 }
+
+
+const mapDispatchToProps = dispatch => ({
+  dispatchRoute: route => dispatch(push(route))
+});
+
+export default connect(null, mapDispatchToProps)(NotFound);

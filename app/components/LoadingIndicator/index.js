@@ -7,7 +7,7 @@ import './loading-indicator.css';
 
 import Circle from './Circle';
 import Wrapper from './Wrapper';
-import FullpageIndicator from './FullpageIndicator';
+import FullpageIndicator, { PlainIndicator } from './FullpageIndicator';
 
 const LoadingIndicator = () => (
   <Wrapper>
@@ -29,9 +29,9 @@ const LoadingIndicator = () => (
 export default LoadingIndicator;
 
 export const PlainLoader = () => (
-  <FullpageIndicator>
+  <PlainIndicator>
     <Spin size="large" />
-  </FullpageIndicator>
+  </PlainIndicator>
 );
 
 export const BubblingLoader = () => (
