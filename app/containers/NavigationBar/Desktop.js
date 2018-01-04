@@ -44,7 +44,7 @@ export class Desktop extends Component {
           </button>
         </li>
         <li className="nav-item-left">
-          <button onClick={() => dispatchRoute("/cart")} className="btns-icon">
+          <button onClick={() => dispatchRoute("/products/cart/")} className="btns-icon">
             <Icon type="shopping-cart" style={styles.icon} />
           </button>
         </li>

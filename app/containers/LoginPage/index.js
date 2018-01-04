@@ -5,7 +5,9 @@
  */
 
 import React from 'react';
-import { Form, InputNumber, Input, Icon, Checkbox, Button } from 'antd';
+import { InputNumber, Input, Icon, Checkbox, Button } from 'antd';
+
+import Form from 'antd/lib/form';
 
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
@@ -43,7 +45,7 @@ class LoginPage extends React.Component {
     this.props.form.validateFields((err, values) => {
       if (!err) {
         console.log('Received values of form: ', values);
-        this.props.dispatchRoute('/account');
+        this.props.dispatchRoute('/user/account/');
       }
     });
   };
@@ -88,7 +90,7 @@ class LoginPage extends React.Component {
                   prefix={
                     <Icon type="user" style={{ color: "rgba(0,0,0,.25)" }} />
                   }
-                  placeholder="Email"
+                  placeholder="Use any email for now."
                 />
               )}
             </FormItem>
@@ -110,7 +112,7 @@ class LoginPage extends React.Component {
                     <Icon type="lock" style={{ color: "rgba(0,0,0,.25)" }} />
                   }
                   type="password"
-                  placeholder="Password"
+                  placeholder="Use any password for now."
                 />
               )}
             </FormItem>

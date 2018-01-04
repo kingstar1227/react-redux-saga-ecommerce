@@ -6,19 +6,21 @@
 
 import React from "react";
 import PropTypes from "prop-types";
+import Form from 'antd/lib/form';
 import { connect } from "react-redux";
 import { push } from 'react-router-redux';
 import { createStructuredSelector } from "reselect";
 import { compose } from "redux";
-
-import { Form, Input, Tooltip, Icon, Checkbox, Button } from "antd";
-import "./signup-page.css";
-
-const FormItem = Form.Item;
+import { Input, Tooltip, Icon, Checkbox, Button } from "antd";
 
 import injectReducer from "utils/injectReducer";
 import makeSelectSignupPage, { makeSelectRegister } from "./selectors";
 import reducer from "./reducer";
+
+// Css
+import "./signup-page.css";
+
+const FormItem = Form.Item;
 
 export class SignupPage extends React.Component {
   state = {
@@ -30,6 +32,7 @@ export class SignupPage extends React.Component {
     this.props.form.validateFieldsAndScroll((err, values) => {
       if (!err) {
         console.log("Received values of form: ", values);
+        this.props.dispatchRoute('/user/account/');
       }
     });
   };

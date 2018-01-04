@@ -4,6 +4,7 @@
     height: 550px;
     width: 100%;
     background: #364d79;
+    background-image: linear-gradient(250deg, #36859d 10%, #7abe95 100%);
     overflow: hidden;
   }
 
