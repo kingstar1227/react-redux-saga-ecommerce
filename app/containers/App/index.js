@@ -27,6 +27,8 @@ import CheckoutPage from 'containers/CheckoutPage/Loadable';
 import CartPage from 'containers/CartPage/Loadable';
 import Account from 'containers/Account/Loadable';
 
+import ScrollToTop from 'components/ScrollToTop';
+
 
 import Footer from 'components/Footer';
 
@@ -42,6 +44,7 @@ export default function App() {
           <meta name="description" content="Shop. Experience. Empower" />
         </Helmet>
         <NavigationBar />
+        <ScrollToTop />
         <Content
           style={{ minHeight: '100vh', display: 'relative', width: '100%' }}
         >
