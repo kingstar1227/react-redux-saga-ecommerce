@@ -355,7 +355,7 @@
 
 /* Category Products Styles
 ==========================================*/
-.category-product {
+/*.category-product {
   padding: 0;
   list-style: none;
   display: -webkit-box;
@@ -573,7 +573,7 @@
     text-align: -webkit-center;
     text-align: center;
   }
-}
+}*/
 
 /* Wrappers for components
 ==========================================*/

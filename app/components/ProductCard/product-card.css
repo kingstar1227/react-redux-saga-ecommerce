@@ -1,0 +1,224 @@
+
+/* Product card
+==========================================*/
+.category-product {
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.category-product-desc > span {
+  display: block;
+  color: #343434;
+  font-size: 14px;
+}
+
+.category-product-desc > span:last-child {
+  font-weight: 700;
+}
+
+.category-product-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  cursor: pointer;
+
+  background-size: cover;
+  overflow: hidden;
+}
+
+.category-product-wrap {
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -o-transition: transform 0.3s ease-out, background-color 0.3s ease-out;
+  -webkit-transition: background-color 0.3s ease-out, 0 0.3s ease-out;
+  -webkit-transition: background-color 0.3s ease-out, 0 0.3s ease-out,
+    -webkit-transform 0.3s ease-out;
+  transition: background-color 0.3s ease-out, 0 0.3s ease-out,
+    -webkit-transform 0.3s ease-out;
+  -o-transition: transform 0.3s ease-out, background-color 0.3s ease-out,
+    0 0.3s ease-out;
+  transition: transform 0.3s ease-out, background-color 0.3s ease-out,
+    0 0.3s ease-out;
+  transition: transform 0.3s ease-out, background-color 0.3s ease-out,
+    0 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+
+.category-drawer {
+  background-color: #ffffff;
+}
+
+.category-product-desc {
+  display: block;
+  background-color: #ffffff;
+  text-align: center;
+  color: #343434;
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1920px) {
+  .category-product > li {
+    width: calc((100% / 6) - 24px);
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1600px) {
+  .category-product > li {
+    width: calc((100% / 5) - 24px);
+  }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1440px) {
+  .category-product > li {
+    width: calc((100% / 4) - 24px);
+  }
+
+  .category-layout-wrap {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1100px) {
+  .category-product > li {
+    width: calc((100% / 3) - 24px);
+  }
+}
+
+@media screen and (min-width: 740px) and (max-width: 900px) {
+  .category-product > li {
+    width: calc((100% / 2) - 24px);
+    margin: 12px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+  .category-product-wrap {
+    height: 340px;
+  }
+
+  .category-product-image {
+    height: 280px;
+  }
+
+  .category-product-desc {
+    height: 60px;
+    padding-top: 8px;
+  }
+
+  .category-product {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .category-product > li {
+    width: calc(100% - 24px);
+    margin: 12px;
+  }
+
+  .category-product-wrap {
+    height: 456px;
+  }
+
+  .category-product-desc {
+    height: 76px;
+    padding-top: 8px;
+    padding-bottom: 16px;
+  }
+
+  .category-product-image {
+    height: 380px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .category-layout {
+    display: none !important;
+  }
+
+  .category-product > li {
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .category-product > li {
+    border: 1px solid #dbdbdb;
+    margin: 0 12px 32px 12px;
+    box-sizing: border-box;
+  }
+
+  .category-product {
+    background-color: #ffffff;
+  }
+
+  .category-layout-wrap {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .category-product-image {
+    height: 260px;
+  }
+
+  .category-product-desc {
+    height: 60px;
+    padding-top: 8px;
+  }
+
+  .sub-nav-btn-expander {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 218px) {
+  .filter-form {
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 32px;
+  }
+  .drawer-main {
+    text-align: -webkit-center;
+    text-align: center;
+  }
+}
+
+/* Product card buttons
+================================================================*/
+.category-product-image:hover .cats-products-icons,
+.category-product-image:active .cats-products-icons,
+.category-product-image:focus .cats-products-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+}
+
+.cats-products-icons {
+  background-color: #7abe95;
+  width: 150px;
+  height: 42px;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin-bottom: 10%;
+  margin-right: auto;
+  margin-left: auto;
+  display: none;
+}
+
+.cats-products-icons i {
+  font-size: 19px;
+  color: #ffffff;
+}

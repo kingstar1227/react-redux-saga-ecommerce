@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
+import ProductCard from 'components/ProductCard/Loadable';
 
-import ProductButton from './ProductButton';
 
 const photoOne =
   'http://res.cloudinary.com/dw3arrxnf/image/upload/v1511190696/img3_q0fjgq.png';
@@ -86,54 +86,15 @@ const products = [
   }
 ];
 
-export class Product extends PureComponent {
-  render() {
-    const { product } = this.props;
-    return (
-      <li>
-        <div className="category-product-wrap">
-          <div
-            className="category-product-image"
-            style={{
-              backgroundImage: `url(${product.image})`
-            }}
-          >
-            <ProductButton />
-          </div>
-          <div className="category-product-desc">
-            <span>{product.title}</span>
-            <span>{`KES ${product.price}`}</span>
-          </div>
-        </div>
-      </li>
-    );
-  }
-}
 
-export class ProductLoader extends PureComponent {
-  render() {
-    const { product } = this.props;
-    return (
-      <li>
-        <div className="category-product-wrap">
-          <div className="category-product-image">
-            <div className="animated-background" />
-          </div>
-          <div className="category-product-desc" />
-        </div>
-      </li>
-    );
-  }
-}
-
-export default class ProductCard extends React.Component {
+export default class ProductsList extends React.Component {
   render() {
     const isLoading = true;
     return (
       <div>
         <ul className="category-product">
           {products.map((product, index) => (
-            <Product product={product} key={product.id} />
+            <ProductCard product={product} key={product.id} />
           ))}
         </ul>
       </div>

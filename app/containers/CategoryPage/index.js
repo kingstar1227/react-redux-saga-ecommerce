@@ -20,9 +20,8 @@ import Category from './Category';
 import PopularProducts from './PopularProducts';
 import ProductFilters from './ProductFilters';
 import ProductAdvert from './ProductAdvert';
-
 import PaginationForm from './PaginationForm';
-import ProductCard from './ProductCard';
+import ProductsList from './ProductsList';
 
 import makeSelectCategoryPage from './selectors';
 import reducer from './reducer';
@@ -51,7 +50,7 @@ export class CategoryPage extends React.Component {
               </div>
               <div className="cats-wapper-two">
                 <PaginationForm />
-                <ProductCard />
+                <ProductsList />
                 <div className="pagination-wrap">
                   <Pagination defaultCurrent={1} total={50} />
                 </div>

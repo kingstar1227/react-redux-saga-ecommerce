@@ -5,9 +5,8 @@ import { Tooltip, Icon } from 'antd';
 
 const Basket = () => (
   <svg
-    width="20px"
-    height="20px"
-    enableBackground="new 0 0 489 489"
+    width="20"
+    height="20"
     viewBox="0 0 489 489"
   >
     <path
