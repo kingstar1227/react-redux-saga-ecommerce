@@ -1,3 +1,9 @@
+/**
+ *
+ * Desktop component
+ *
+*/
+
 import React, { Component } from "react";
 import { push } from "react-router-redux";
 import { connect } from "react-redux";
@@ -20,12 +26,13 @@ export class Desktop extends Component {
   render() {
     const { dispatchRoute } = this.props;
     return (
-      <ul>
+      <ul className="desktop-nav-wrapper">
         <li className="nav-item-right nav-logo">
           <button onClick={() => dispatchRoute("/#")}>
             <img src={mboLogo} alt="" />
           </button>
         </li>
+
 
         <li className="nav-item-left">
           <button
@@ -35,6 +42,7 @@ export class Desktop extends Component {
             Sign In
           </button>
         </li>
+
         <li className="nav-item-left">
           <button
             onClick={() => dispatchRoute("/products/checkout/")}
@@ -61,6 +69,7 @@ export class Desktop extends Component {
             <SearchForm />
           </div>
         </li>
+
       </ul>
     );
   }

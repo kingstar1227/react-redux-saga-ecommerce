@@ -4,13 +4,12 @@
   display: block;
   width: 100%;
   height: 85px;
+  position: relative;
 }
 
 .navbar > ul {
   list-style-type: none;
   margin: 0;
-  padding-left: 30px;
-  padding-right: 30px;
   overflow: hidden;
   background-color: #ffffff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
@@ -51,17 +50,11 @@
   position: relative;
 }
 
-.navbar > ul > li button {
-  color: #343434;
-  text-align: center;
-  padding: 8px;
-}
-
 .navbar > ul > li a:hover:not(.active) {
   background-color: #111;
 }
 
-@media screen and (min-width: 1200px) {
+@media all and (min-width: 1200px) {
   .wrapper-search {
     width: 550px;
   }
@@ -72,7 +65,7 @@
   }
 }
 
-@media screen and (min-width: 1084px) and (max-width: 1200px) {
+@media all and (min-width: 1084px) and (max-width: 1200px) {
   .wrapper-search {
     width: 460px;
   }
@@ -83,7 +76,7 @@
   }
 }
 
-@media screen and (min-width: 965px) and (max-width: 1084px) {
+@media all and (min-width: 965px) and (max-width: 1084px) {
   .wrapper-search {
     width: 350px;
   }
@@ -94,7 +87,7 @@
   }
 }
 
-@media screen and (min-width: 840px) and (max-width: 965px) {
+@media all and (min-width: 840px) and (max-width: 965px) {
   .wrapper-search {
     width: 240px;
   }
@@ -105,7 +98,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 840px) {
+@media all and (min-width: 768px) and (max-width: 840px) {
   .wrapper-search {
     display: none;
   }
@@ -116,10 +109,141 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  .btns-label {
-    font-size: 15px;
-    border-radius: 2px;
-    font-weight: 600;
+@media all and (min-width: 768px) {
+  .mobile-nav-wrapper,
+  .mobile-nav-toggle {
+    display: none;
+  }
+
+  .navbar > ul > li button {
+    color: #343434;
+    text-align: center;
+    padding: 8px;
+  }
+
+  .navbar > ul {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .mobile-nav-display {
+    display: none;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .desktop-nav-wrapper {
+    display: none;
+  }
+
+  .mobile-nav-wrapper {
+    padding-left: 8px;
+    padding-right: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dbdbdb;
+  }
+
+  .mobile-nav-wrapper li:nth-child(n + 2):not(.mobile-nav-toggle) {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mobile-nav-wrapper > li:first-of-type button {
+    padding: 0;
+    width: calc(100% - 42px);
+    overflow: hidden;
+  }
+
+  .nav-logo img {
+    max-width: 100%;
+  }
+
+  .mobile-nav-wrapper > li:last-of-type {
+    margin-right: 0;
+  }
+
+  .mobile-nav-wrapper > li button {
+    color: #343434;
+    text-align: center;
+    padding: 0px;
+    cursor: pointer;
+  }
+
+  .navbar > ul {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  /* Mobile navbar
+=============================================================================*/
+  .mobile-nav-display {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .mobile-nav-bar-wrap {
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    max-height: 0px;
+  }
+
+  .mobile-nav-bar-wrap::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .mobile-nav-bar-wrap::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+    background-color: #f6f3ee;
+  }
+
+  .mobile-nav-bar-wrap::-webkit-scrollbar-thumb {
+    background-color: #dbdbdb;
+    outline: 1px solid slategrey;
+  }
+
+  .ant-menu-sub .ant-menu-item-active:focus,
+  .ant-menu-sub .ant-menu-item-active:hover {
+    background-color: #d1ddde;
+    color: #36859d;
+  }
+
+  .ant-menu-sub .ant-menu-item {
+    margin-bottom: 1px;
+    margin-top: 0;
+    color: #36859d;
+  }
+
+  .ant-menu-item:hover,
+  .ant-menu-submenu-title:hover {
+    color: #343434;
+    background-color: #feecb5;
+  }
+
+
+  .ant-menu-submenu-open {
+    background-color: #feecb5;
+    color: #343434;
+  }
+  .ant-menu-inline .ant-menu-submenu-title,
+  .ant-menu-inline .ant-menu-item {
+    margin-bottom: 1px;
+    margin-top: 0px;
+  }
+
+  .ant-menu-sub .ant-menu-item:not(.ant-menu-item-selected):focus,
+  .ant-menu-sub .ant-menu-item:not(.ant-menu-item-selected):hover {
+    border-right: 3px solid #36859d;
+    transition: transform 0.15s cubic-bezier(0.215, 0.61, 0.355, 1),
+      opacity 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 }

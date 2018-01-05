@@ -1,3 +1,25 @@
+.ant-carousel-vertical .slick-dots li.slick-active button,
+.ant-carousel-vertical .slick-dots li button {
+  background-color: transparent;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.ant-carousel-vertical .slick-dots li button {
+  border: 1px solid #ffffff;
+}
+
+.ant-carousel-vertical .slick-dots li.slick-active button {
+  border: 1px solid #f8be50;
+}
+
+.carousel-wrap {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
 
 @media screen and (min-width: 768px) {
   .ant-carousel .slick-slide {
@@ -23,22 +45,6 @@
     box-sizing: border-box;
   }
 
-  .ant-carousel-vertical .slick-dots li.slick-active button,
-  .ant-carousel-vertical .slick-dots li button {
-    background-color: transparent;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    opacity: 1;
-  }
-
-  .ant-carousel-vertical .slick-dots li button {
-    border: 1px solid #ffffff;
-  }
-
-  .ant-carousel-vertical .slick-dots li.slick-active button {
-    border: 1px solid #f8be50;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -49,10 +55,8 @@
   .slick-slide img {
     height:  250px;
   }
-}
 
-.carousel-wrap {
-  width: 100%;
-  display: block;
-  overflow: hidden;
+  .ant-carousel-vertical .slick-dots {
+    margin-right: 30px;
+  }
 }

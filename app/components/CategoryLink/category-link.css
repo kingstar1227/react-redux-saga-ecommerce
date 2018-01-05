@@ -50,8 +50,8 @@
 
 @media all and (max-width: 768px) {
   .category-link-wrap {
-    width: 100%;
-    margin: 16px auto;
+    width: calc(100% - 16px);
+    margin: 16px 8px;
     background-color: pink;
     height: 100vh;
   }

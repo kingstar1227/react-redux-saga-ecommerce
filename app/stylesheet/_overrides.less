@@ -9,12 +9,14 @@
 @btn-secondary: ~"@{btn-prefix-cls}-secondary";
 @btn-gold: ~"@{btn-prefix-cls}-gold";
 @btn-red: ~"@{btn-prefix-cls}-red";
+@btn-red-gold: ~"@{btn-prefix-cls}-red-gold";
 @btn-primary-color : #ffffff;
 @primary-color: #36859d;
 @secondary-color: #7abe95;
 @gold-6: #fddf80;
 @red-6: #da554d;
 @normal-color: #dbdbdb;
+@red-gold: #ffc04a;
 
 // Body
 // -----------------------------
@@ -38,7 +40,7 @@
 // Overrides
 // -----------------------------
 @border-radius-base: 0px;
-@btn-padding-lg: 6px 24px;
+@btn-padding-lg: 8px 24px;
 @btn-font-weight: 600;
 
 @font-size-lg : @font-size-base + 4px;
@@ -66,6 +68,12 @@
 .@{btn-prefix-cls}.@{btn-red} {
   background-color: @red-6;
   border-color: @red-6;
+  color: @btn-primary-color;
+}
+
+.@{btn-prefix-cls}.@{btn-red-gold} {
+  background-color: @red-gold;
+  border-color: @red-gold;
   color: @btn-primary-color;
 }
 

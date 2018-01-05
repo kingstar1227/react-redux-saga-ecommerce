@@ -26,6 +26,7 @@ import ProductPage from 'containers/ProductPage/Loadable';
 import CheckoutPage from 'containers/CheckoutPage/Loadable';
 import CartPage from 'containers/CartPage/Loadable';
 import Account from 'containers/Account/Loadable';
+import Test from 'containers/Test';
 
 import ScrollToTop from 'components/ScrollToTop';
 
@@ -52,6 +53,7 @@ export default function App() {
             <Route exact path="/" component={HomePage} />
             <Route path="/signin/" component={LoginPage} />
             <Route path="/register/" component={SignupPage} />
+            <Route path="/test/" component={Test} />
             <Route exact path="/category/" component={CategoryPage} />
             <Route path="/category/product/" component={ProductPage} />
             <Route path="/products/checkout/" component={CheckoutPage} />

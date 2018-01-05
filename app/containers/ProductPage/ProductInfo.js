@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Rate, Button } from 'antd';
+import { Rate, Button, notification, Icon } from 'antd';
+
 import Select from 'antd/lib/select';
 import { connect } from "react-redux";
 import { push } from "react-router-redux";
@@ -9,6 +10,21 @@ const Option = Select.Option;
 function handleChange(value) {
   console.log(`selected ${value}`);
 }
+
+// Notifications config
+notification.config({
+  placement: 'topRight',
+  duration: 4
+});
+
+const handleCartNotifier = () => {
+  notification.open({
+    message: "Product has been added to the cart.",
+    description: 'This is product has been added to the cart.',
+    icon: <Icon type="message" style={{color: "#7abe95"}}/>,
+  });
+};
+
 
 export class ProductInfo extends Component {
   render() {
@@ -28,7 +44,7 @@ export class ProductInfo extends Component {
             <strike>KES 3000</strike>
           </div>
         </div>
-        <div className="rate-demo-wrp">
+        <div className="rate-product">
           <Rate disabled defaultValue={4} />
         </div>
         <div className="product-current-descptn">
@@ -66,11 +82,14 @@ export class ProductInfo extends Component {
               <Option value="12">12</Option>
             </Select>
           </div>
-          <div className="">
-            <Button type="secondary" size="large" onClick={() => dispatchRoute('/products/checkout/')}>
-              ADD TO CART
-            </Button>
-          </div>
+        </div>
+        <div className="cart-buy-btn-wrap">
+          <Button type="red-gold" size="large" onClick={() => dispatchRoute('/products/checkout/')}>
+            Buy Now
+          </Button>
+          <Button type="secondary" size="large" onClick={handleCartNotifier}>
+            Add to Cart
+          </Button>
         </div>
         <div className="product-share-icons">
           <header>Share or send to friend</header>

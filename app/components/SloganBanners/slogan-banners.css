@@ -105,8 +105,8 @@
 
 @media all and (max-width: 500px) {
   .slogan-banners-wrap > * {
-    flex: 0 0 calc(100% - 32px);
-    margin: 8px 16px;
+    flex: 0 0 calc(100% - 16px);
+    margin: 8px 8px;
   }
 }
 

@@ -30,3 +30,5 @@
 .sub-navbar-wrap .ant-menu {
   font-size: 13px;
 }
+
+@media all and (max-width: 768px) {.sub-navbar-wrap { display: none }}

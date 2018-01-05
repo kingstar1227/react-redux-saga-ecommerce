@@ -56,7 +56,7 @@ export class Category extends Component {
   // submenu keys of first level
   rootSubmenuKeys = ["0", "1", "2", "3", "4", "5", "6", "7", 8];
   state = {
-    openKeys: ["0"]
+    openKeys: []
   };
   onOpenChange = openKeys => {
     const latestOpenKey = openKeys.find(

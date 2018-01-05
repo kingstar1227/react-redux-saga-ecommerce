@@ -20,6 +20,7 @@ import reducer from "./reducer";
 import saga from "./saga";
 
 import Desktop from "./Desktop";
+import Mobile from "./Mobile";
 
 // Css
 import "./navigation-bar.css";
@@ -33,6 +34,7 @@ export class NavigationBar extends React.PureComponent {
     return (
     <Header className="navbar">
       <Desktop />
+      <Mobile />
     </Header>
     );
   }

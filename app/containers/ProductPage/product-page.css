@@ -30,25 +30,50 @@
 
 /* Rating Stars
 ==================================================================*/
-.ant-rate {
-  color: #fddf80;
-  font-size: 16px;
+.rate-product .ant-rate {
+  color: #ffc04a;
+  font-size: 18px;
 }
 
-.rate-demo-wrp {
+.rate-product {
   margin-bottom: 16px;
 }
+
 
 /* Album  styles
 ================================================================*/
 .product-page-img-wrap {
   width: 300px;
   height: 400px;
-  background-color: black;
+  background-color: #f6f3ee;
 
   display: flex;
   justify-content: center;
   align-items: flex-end;
+}
+
+@media screen and (max-width: 576px) {
+  .product-page-img-div {
+    padding-right: 16px;
+    padding-left: 16px;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 16px;
+    margin-top: 0px;
+  }
+  
+  .product-refinement-form,
+  .rate-demo-wrp {
+    margin-left: 8px;
+  }
+
+  .ant-modal-body {
+    padding: 0px;
+    line-height: 0px;
+    overflow: hidden;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -76,6 +101,13 @@
   padding-right: 16px;
 }
 
+@media screen and (max-width: 460px) {
+  .product-info-wrap {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .product-info-wrap {
     margin: 32px 0;
@@ -90,7 +122,6 @@
 
 .product-page-metas {
   font-size: 15px;
-  font-weight: 700;
 }
 
 .product-current-price {
@@ -104,7 +135,8 @@
   margin: 0px 8px 32px 0px;
   padding-top: 16px;
   padding-bottom: 16px;
-  font-size: 14px;
+  font-size: 15px;
+  color: #343434;
 }
 
 .product-refinement-form {
@@ -374,4 +406,25 @@
     padding-right: 16px;
     padding-left: 16px;
   }
+}
+
+/* Cart and Buy buttons wrapper
+===============================================*/
+
+.cart-buy-btn-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+  margin-left: 8px;
+}
+
+.cart-buy-btn-wrap > *{
+  margin-right: 8px;
+  margin-bottom: 16px;
 }

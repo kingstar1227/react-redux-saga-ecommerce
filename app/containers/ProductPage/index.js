@@ -39,10 +39,10 @@ export class ProductPage extends React.Component {
         <Row type="flex" justify="center">
           <Col xs={24} sm={24} md={24} lg={24} xl={20} xxl={18}>
             <Row type="flex" justify="center">
-              <Col xs={24} sm={12} md={12} lg={10} xl={6} xxl={6}>
+              <Col xs={24} sm={24} md={12} lg={10} xl={6} xxl={6}>
                 <ProductImage />
               </Col>
-              <Col xs={24} sm={12} md={12} lg={14} xl={18} xxl={18}>
+              <Col xs={24} sm={24} md={12} lg={14} xl={18} xxl={18}>
                 <ProductInfo />
               </Col>
             </Row>
