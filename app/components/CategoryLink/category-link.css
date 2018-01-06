@@ -31,11 +31,6 @@
   flex: 1 1 100%;
 }
 
-.category-actions:hover button {
-  background-color: #2c839d;
-  color: #fff;
-}
-
 .category-actions span {
   font-weight: 500;
   color: #ffffff;
@@ -43,15 +38,10 @@
   display: block;
 }
 
-.category-actions:hover span {
-  background-color: #ffffff;
-  color: #343434;
-}
-
 @media all and (max-width: 768px) {
   .category-link-wrap {
     width: calc(100% - 16px);
-    margin: 16px 8px;
+    margin: 0px 8px 50px 8px;
     background-color: pink;
     height: 100vh;
   }
@@ -61,34 +51,38 @@
   }
 
   .category-actions button {
-    padding: 4px 16px;
+    padding: 8px 16px;
     margin: 20px 20%;
     color: transparent;
   }
 
-  .category-actions:hover button {
+  .category-actions button {
+    color: #fff;
+    background-color: #2c839d;
     font-size: 14px;
   }
 
   .category-actions span {
     margin: 66px 10% 0 10%;
     font-size: 16px;
+    padding: 6px 0;
+    font-weight: 600;
   }
 
-  .category-actions:active span,
-  .category-actions:focus span {
-    background-color: #ffffff;
-    color: #343434;
+  .category-actions span,
+  .category-actions span {
+    background-color: rgba(250, 250, 250, 0.2);
+    color: #ffffff;
+    border: 1px solid #ffffff;
   }
 
   .category-link-wrap > div {
     position: relative;
     background-size: cover;
   }
-
 }
 
-@media all and (min-width: 768px)  and (max-width: 2000px) {
+@media all and (min-width: 768px) and (max-width: 2000px) {
   .category-link-wrap {
     margin-bottom: 32px;
   }
@@ -111,6 +105,16 @@
   .category-actions span {
     margin: 66px 10% 0 10%;
     font-size: 22px;
+  }
+
+  .category-actions:hover span {
+    background-color: #ffffff;
+    color: #343434;
+  }
+
+  .category-actions:hover button {
+    background-color: #2c839d;
+    color: #fff;
   }
 
   .category-link-wrap > div:hover {

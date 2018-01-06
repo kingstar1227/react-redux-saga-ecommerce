@@ -141,7 +141,7 @@ export class CartPage extends React.Component {
                   <span>Enter your coupon code if you have one.</span>
                   <span>
                     <form onSubmit={e => e.preventDefault()}>
-                      <input type="text" placeholder="Enter coupon code" />
+                      <input style={{marginBottom: 8}} type="text" placeholder="Enter coupon code" />
                       <Button  type="gold" size="large">Apply coupon</Button>
                     </form>
                   </span>

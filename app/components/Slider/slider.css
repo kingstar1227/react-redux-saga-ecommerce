@@ -49,11 +49,12 @@
 
 @media screen and (max-width: 768px) {
   .carousel-wrap {
-    height: 250px;
+    height: 400px;
   }
 
   .slick-slide img {
-    height:  250px;
+    height:  400px;
+    width: auto;
   }
 
   .ant-carousel-vertical .slick-dots {

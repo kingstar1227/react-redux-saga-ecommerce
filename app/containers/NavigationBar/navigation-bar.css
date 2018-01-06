@@ -183,7 +183,7 @@
   .mobile-nav-display {
     position: fixed;
     width: 100%;
-    z-index: 10;
+    z-index: 17;
   }
 
   .mobile-nav-bar-wrap {
@@ -195,6 +195,7 @@
     width: 100%;
     transition: all 0.3s ease-in-out;
     max-height: 0px;
+    border-bottom: 1px solid #dbdbdb;
   }
 
   .mobile-nav-bar-wrap::-webkit-scrollbar {
@@ -228,7 +229,6 @@
     color: #343434;
     background-color: #feecb5;
   }
-
 
   .ant-menu-submenu-open {
     background-color: #feecb5;

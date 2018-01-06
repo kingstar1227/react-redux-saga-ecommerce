@@ -1,10 +1,11 @@
 /* Category page styles
 =======================================================*/
+
 @media screen and (min-width: 768px) {
   .wrap-res-nav2 {
     display: block;
     width: 100%;
-    height: 70px;
+    height: 0px;
   }
 
   .wrap-res-nav2 > .responsive-nav-wrap {
@@ -34,6 +35,7 @@
 
 /* Product card wrapper
 ==========================================*/
+
 .category-product {
   padding: 0;
   list-style: none;
@@ -45,11 +47,12 @@
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  min-height: calc(100vh - 85px)
+  min-height: calc(100vh - 85px);
 }
 
 /* Side nav Styles
 =============================================*/
+
 .category-side-menu {
   color: #343434;
 }
@@ -132,6 +135,7 @@
 
 /* Popular products
 =========================================*/
+
 .popular-products-wrap {
   display: block;
   width: 100%;
@@ -159,6 +163,7 @@
   width: ;
   height: ;
 }
+
 .popular-products-details {
   display: block;
   padding: 0 16px;
@@ -193,6 +198,7 @@
 
 /* Products Filters
 ========================================*/
+
 .filter-table-wrap {
   width: 100%;
   min-height: 200px;
@@ -248,6 +254,7 @@
 
 /* Product advert
 ===============================================*/
+
 .product-advert-wrap {
   display: flex;
   -webkit-box-orient: vertical;
@@ -281,6 +288,12 @@
 .product-advert-wrap button:hover {
   background-color: #dbdbdb;
   border: 1px solid #dbdbdb;
+}
+
+@media all and (max-width: 650px) {
+  .product-advert-wrap {
+    height: 500px;
+  }
 }
 
 .product-advert-btn-wrap {
@@ -321,6 +334,7 @@
 
 /* Pagination form Styles
 =================================================*/
+
 .filter-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -350,27 +364,40 @@
 }
 
 .btn-drawer {
-  font-size: 18px;
+  display: none;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
   .filter-form {
-    padding: 8px 4px;
+    padding: 16px 8px;
     flex-wrap: wrap;
+    position: relative;
   }
 
-  .filter-form > * {
-    flex: 0 0 100%;
+  .filter-form > *:not(.btn-drawer) {
+    flex: 0 0 calc(100% - 45px);
     margin-bottom: 16px;
   }
 
   .btn-drawer {
-    display: none;
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: calc(100% - 64px);
+    background-color: #f6f3ee;
+    height: 40px;
+    width: 60px;
+    font-size: 24px;
+  }
+
+  .menu-drawer-headers {
+    padding-top: 32px;
   }
 }
 
 /* Wrappers for components
 ==========================================*/
+
 .cats-wapper {
   display: flex;
   box-sizing: border-box;
@@ -401,6 +428,7 @@
 
 /* Pagination styles
 =======================================*/
+
 .pagination-wrap {
   width: 100%;
   display: -webkit-box;
@@ -455,4 +483,72 @@
   height: 100%;
   position: relative;
   width: 100%;
+}
+
+.sidebar__menu {
+  display: none;
+}
+
+/* Mobile layouts
+==========================================*/
+@media all and (max-width: 650px) {
+  .sidebar__menu {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 16;
+  }
+
+  .sidebar {
+    display: block;
+    position: absolute;
+    top: 0px;
+    min-height: 100%;
+    background-color: #ffffff;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    -webkit-transform: translateX(-103%);
+    transform: translateX(-103%);
+    padding-bottom: 15vh;
+    z-index: 16;
+  }
+
+  .menu__visible .sidebar {
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  .menu__animatable .sidebar {
+    transition: all 130ms ease-in;
+  }
+
+  .menu__visible.menu__animatable .sidebar {
+    transition: all 230ms ease-out;
+  }
+
+  .sidebar__main {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+
+  .hide__lg__screen {
+    display: none;
+  }
+
+  /* Sidebar closing button
+  ==========================*/
+  .sidebar__close__btn {
+    display: block;
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: calc(100% - 60px);
+    font-size: 24px;
+    color: #343434;
+    font-weight: 700;
+  }
 }
